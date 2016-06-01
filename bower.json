@@ -1,0 +1,17 @@
+{
+  "name": "greenvalley",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "n.zhirkova <neyia@mail.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/neyia/greenValley",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
