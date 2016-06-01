@@ -15,5 +15,8 @@
     "url": "https://github.com/neyia/greenValley/issues"
   },
   "homepage": "https://github.com/neyia/greenValley#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
