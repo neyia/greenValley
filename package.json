@@ -19,6 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.12.10",
     "gulp": "^3.9.1",
+    "gulp-headerfooter": "^1.0.3",
     "gulp-processhtml": "^1.1.0",
     "gulp-size": "^2.1.0"
   }
