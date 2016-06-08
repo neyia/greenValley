@@ -17,6 +17,10 @@ gulp.task('fonts', function () {
     return gulp.src('./src/fonts/*/*').pipe(gulp.dest('./build/fonts'));
 });
 
+gulp.task('images', function () {
+    return gulp.src('./src/img/*/*').pipe(gulp.dest('./build/img'));
+});
+
 gulp.task('headerfooter', function () {
     gulp.src('./src/*.html')
         .pipe(headerfooter.header('./src/part/header.html'))
