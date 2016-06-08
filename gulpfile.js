@@ -9,6 +9,14 @@ gulp.task('html', function () {
     return gulp.src('./src/*.html').pipe(gulp.dest('./build'));
 });
 
+gulp.task('js', function () {
+    return gulp.src('./src/scripts/*.js').pipe(gulp.dest('./build/js'));
+});
+
+gulp.task('fonts', function () {
+    return gulp.src('./src/fonts/*/*').pipe(gulp.dest('./build/fonts'));
+});
+
 gulp.task('headerfooter', function () {
     gulp.src('./src/*.html')
         .pipe(headerfooter.header('./src/part/header.html'))
