@@ -10,7 +10,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('./src/scripts/*.js').pipe(gulp.dest('./build/js'));
+    return gulp.src('./src/scripts/*.js').pipe(gulp.dest('./build/scripts'));
 });
 
 gulp.task('fonts', function () {
@@ -37,9 +37,12 @@ gulp.task('less', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./build/css'));
+        .pipe(gulp.dest('./build/styles'));
 });
 
 gulp.task('watch', function () {
     gulp.watch('./src/styles/style.less',['less']);
+    gulp.watch('./src/*.html',['html']);
+    gulp.watch('./src/scripts/*.js',['js']);
+    gulp.watch('./src/*.html',['headerfooter']);
 });
