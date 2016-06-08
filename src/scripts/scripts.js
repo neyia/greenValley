@@ -93,9 +93,19 @@ $(document).ready(function(){
     //-----------------------------------------------------------
 
     var owl = $("#owl-demo");
+    var owlL = $(".shares__slider-wrapper");
 
     owl.owlCarousel({
         items : 2,
+        itemsDesktop      : [1199,10],
+        itemsDesktopSmall     : [979,10],
+        itemsTablet       : [768,8],
+        itemsMobile       : [479,4],
+        pagination:true
+    });
+
+    owlL.owlCarousel({
+        items : 1,
         itemsDesktop      : [1199,10],
         itemsDesktopSmall     : [979,10],
         itemsTablet       : [768,8],
