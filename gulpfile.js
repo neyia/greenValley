@@ -47,6 +47,7 @@ gulp.task('less', function () {
 gulp.task('watch', function () {
     gulp.watch('./src/styles/style.less',['less']);
     gulp.watch('./src/*.html',['html']);
+    gulp.watch('./src/img/*/*',['images']);
     gulp.watch('./src/scripts/*.js',['js']);
     gulp.watch('./src/*.html',['headerfooter']);
 });

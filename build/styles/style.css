@@ -1495,13 +1495,28 @@ input:focus:-ms-input-placeholder {
   display: block;
 }
 /* Style for "Gallery" */
-.gallery #owl-demo .item {
-  margin: 3px;
+.gallery #sync1 .item {
+  background: #0c83e7;
+  padding: 80px 0px;
+  margin: 5px;
+  color: #FFF;
+  border-radius: 3px;
+  text-align: center;
 }
-.gallery #owl-demo .item img {
-  display: block;
-  width: 100%;
-  height: auto;
+.gallery #sync2 .item {
+  background: #C9C9C9;
+  padding: 10px 0px;
+  margin: 5px;
+  color: #FFF;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+.gallery #sync2 .item h1 {
+  font-size: 18px;
+}
+.gallery #sync2 .synced .item {
+  background: #0c83e7;
 }
 /* Style for "Reviews" */
 /* Style for "Shares" */
