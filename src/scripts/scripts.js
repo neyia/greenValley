@@ -89,5 +89,26 @@ $(document).ready(function(){
         }
 
     }
-    
+
+    //-----------------------------------------------------------
+
+    var owl = $("#owl-demo");
+
+    owl.owlCarousel({
+        items : 2,
+        itemsDesktop      : [1199,10],
+        itemsDesktopSmall     : [979,10],
+        itemsTablet       : [768,8],
+        itemsMobile       : [479,4],
+        pagination:true
+    });
+
+    // Custom Navigation Events
+    $(".next").click(function(){
+        owl.trigger('owl.next');
+    });
+    $(".prev").click(function(){
+        owl.trigger('owl.prev');
+    })
+
 });

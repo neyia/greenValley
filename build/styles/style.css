@@ -1530,6 +1530,11 @@ input:focus:-ms-input-placeholder {
   background: #0c83e7;
 }
 /* Style for "Reviews" */
+.reviews {
+  padding: 65px 0 50px 0;
+  background: rgba(0, 128, 0, 0.42);
+  text-align: center;
+}
 /* Style for "Shares" */
 /* Style for "Our location" */
 /* Style for "Recommendations" */
