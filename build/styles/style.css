@@ -1485,6 +1485,12 @@ input:focus:-ms-input-placeholder {
   display: block;
 }
 /* Style for "Healthy Rest" */
+.healthy-rest .healthy-rest__inner .healthy-rest__slide-item {
+  display: none;
+}
+.healthy-rest .healthy-rest__inner .healthy-rest__slide-item-active {
+  display: block;
+}
 /* Style for "Gallery" */
 /* Style for "Reviews" */
 /* Style for "Shares" */

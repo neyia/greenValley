@@ -11,9 +11,12 @@ $(document).ready(function(){
         $(this).addClass('link--underline-active');
 
         var tab = $(this).attr('href');
-
         $('.promo-slider__item').not(tab).css({'display':'none'});
 
+        var tab2 = $(this).attr('href')+'0';
+        
+        $('.healthy-rest__slide-item').css({'display':'block'}).not(tab2).css({'display':'none'});
+        
         $(tab).fadeIn(400);
     });
     
