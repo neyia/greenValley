@@ -22,7 +22,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('owl', function () {
-    return gulp.src('./styles/libs/*.css').pipe(gulp.dest('./build/styles/libs'));
+    return gulp.src('./src/styles/libs/*.css').pipe(gulp.dest('./build/styles/libs'));
 });
 
 gulp.task('headerfooter', function () {
