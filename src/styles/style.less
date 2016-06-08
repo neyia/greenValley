@@ -1,8 +1,113 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/grid";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/responsive-utilities";
+@import "scaffolding";
+
+@import "fonts/fonts";
+@import "components/variables";
+@import "components/control";
+@import "mixins/mixins";
+
 body{
     margin: 0;
     padding: 0;
+    font-family: @font-family-fira-sans;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul {
+    padding: 0;
+    margin: 0;
+}
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+}
+li {
+    display: inline-block;
+}
+
+.link {
+    font-family: @font-family-fira-sans;
+    color: @color-base;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0 6px;
+    .font-styles(14px,72px,300);
+    .transition();
+}
+.link:hover, .link:focus, .link:active {
+    color: @color-warning;
+}
+
+.link--underline:hover:before,
+.link--underline:focus:before,
+.link--underline:active:before,
+.link--underline-double:hover:after,
+.link--underline-double:focus:after,
+.link--underline-double:active:after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: @color-warning;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.link--underline-double:hover:after,
+.link--underline-double:focus:after,
+.link--underline-double:active:after {
+    bottom: -8px;
+}
+.input-reset {
+    outline: none;
+    border: none;
+    background: none;
+}
+input:focus::-webkit-input-placeholder,
+input:focus::-moz-placeholder,
+input:focus:-moz-placeholder,
+input:focus:-ms-input-placeholder{
+    color: transparent;
+}
+
+.btn {
+    display:         inline-block;
+    font-family:     @font-family-fira-sans;
+    color:           #ffffff;
+    text-decoration: none;
+    text-transform:  uppercase;
+    background:      @color-warning none;
+    cursor:          pointer;
+    padding:         10px 30px;
+    margin:          0;
+    border:          none;
+    outline:         none;
+    transition:      ease-in-out all 400ms;
+
+    .font-styles(14px,18px,500);
+    .border-radius(70px);
+    .transition();
+    .appearance();
+}
+.btn:hover {
+    background-color: #e85715;
+    text-decoration: none;
+    color: #fff;
+}
+.page-header__inner{}
 /*Home via avocode*/
 
 /* Style for "Header" */

@@ -1,0 +1,86 @@
+// - // Projects defaults // - //
+
+.hide                            { display: none;}
+
+.inline-block                    { display: inline-block;}
+.block,.show                     { display: block;}
+
+.relative                        { position: relative;}
+.absolute                        { position: absolute;}
+
+.left                            { float: left;}
+.right                           { float: right;}
+
+.text-center                     { text-align: center;}
+.text-left                       { text-align: left;}
+.text-right                      { text-align: right;}
+
+.vertical-top                    { vertical-align: top;}
+
+.text-uppercase                  { text-transform: uppercase;}
+
+.clearfix:after{
+    float: none;
+    display: block;
+    clear: both;
+    content: '';
+}
+
+// - // Projects mixins // - //
+
+.box-sizing (@type: border-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing: @type;
+    box-sizing: @type;
+}
+.content-sizing (@type: content-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing: @type;
+    box-sizing: @type;
+}
+.border-radius (@radius: 11px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    -khtml-border-radius: @radius;
+    -o-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -icab-border-radius: @radius;
+    -webkit-border-top-left-radius: @radius;
+    -webkit-border-bottom-left-radius: @radius;
+    -webkit-border-top-right-radius: @radius;
+    -webkit-border-bottom-right-radius: @radius;
+}
+.rotate (@grad: 90deg) {
+    -ms-transform: rotate(@grad);
+    -webkit-transform: rotate(@grad);
+    transform: rotate(@grad);
+}
+.opacity(@opacity: 50){
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity = @opacity);
+    -moz-opacity: 0.01*@opacity;
+    -khtml-opacity: 0.01*@opacity;
+    opacity: 0.01*@opacity;
+}
+.font-styles(@font_size: 14px, @line_height: 16px,@font_weight: 400){
+    font-size: @font_size;
+    line-height: @line_height;
+    font-weight: @font_weight;
+}
+.transition(@s: 0.3s){
+    -webkit-transition: @s ease all;
+    -moz-transition: @s ease all;
+    -ms-transition: @s ease all;
+    -o-transition: @s ease all;
+    transition: @s ease all;
+}
+.appearance{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+}
