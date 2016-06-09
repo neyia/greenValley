@@ -1651,7 +1651,7 @@ input:focus:-ms-input-placeholder {
 }
 .shares .shares__slider-wrapper .shares__slide .shares__slide-information {
   position: absolute;
-  top: 0px;
+  top: 0;
   background: white;
 }
 .shares .owl-pagination {
@@ -1677,7 +1677,19 @@ input:focus:-ms-input-placeholder {
   height: 314px;
   margin: 8px 0 0;
 }
+.transport .transport__list {
+  text-align: center;
+}
+.transport .transport__list .transport__item {
+  display: inline-block;
+  width: 300px;
+}
 /* Style for "Recommendations" */
+.recommendations {
+  padding: 65px 0 50px 0;
+  background: rgba(0, 128, 0, 0.42);
+  text-align: center;
+}
 /* Single room via avocode*/
 /* Style for "About room" */
 /* Style for "recommendations--gray-bg" */

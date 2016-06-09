@@ -505,7 +505,7 @@ input:focus:-ms-input-placeholder{
             position: relative;
             .shares__slide-information{
                 position: absolute;
-                top: 0px;
+                top: 0;
                 background: white;
                 .shares__slide-title{}
 
@@ -538,23 +538,29 @@ input:focus:-ms-input-placeholder{
         height: 314px;
         margin: 8px 0 0;
     }
-    .transport{
-        .transport__list{
-            .transport__item{
-                .transport__title{}
-                .transport__routes-list{
-                    .transport__routes-item{
-                        b{}
-                    }
+}
+
+.transport{
+    .transport__list{
+        text-align: center;
+        .transport__item{
+            display: inline-block;
+            width: 300px;
+            .transport__title{}
+            .transport__routes-list{
+                .transport__routes-item{
+                    b{}
                 }
             }
         }
     }
 }
 
-
 /* Style for "Recommendations" */
 .recommendations{
+    padding: 65px 0 50px 0;
+    background: rgba(0, 128, 0, 0.42);
+    text-align: center;
     .recommendations__inner{
         .recommendations__title{}
         .recommendations__list{
