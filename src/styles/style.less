@@ -341,45 +341,56 @@ input:focus:-ms-input-placeholder{
 
 /* Style for "Gallery" */
 .gallery{
-  .owl-carousel{
-    height: 500px;
-  }
+    padding: 60px 0 40px 0;
 
-  #sync2 .item img,
-  #sync2 .owl-item{
-    width: 200px;
-    height: 200px;
-  }
-  #sync2{
-    height: 200px;
-  }
-  #sync1 .item{
-    background: #0c83e7;
-    padding: 80px 0px;
-    margin: 5px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-  }
-  #sync2 .item{
-    background: #C9C9C9;
-    padding: 10px 0px;
-    margin: 5px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-    cursor: pointer;
-  }
-  #sync2 .item h1{
-    font-size: 18px;
-  }
-  #sync2 .synced .item{
-    background: #0c83e7;
-  }
+    .owl-carousel{
+        height: 500px;
+        .gallery__shown-img-item{
+            width: 100%;
+            background: #0c83e7;
+            margin: 5px;
+            color: #FFF;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            text-align: center;
+            img{
+                width: 100%;
+                min-height: 500px;
+            }
+        }
+    }
+
+    #sync2{
+        height: 200px;
+        .owl-wrapper-outer{
+            height: 200px;
+            .owl-item{
+                height: 200px;
+                .gallery__thumb-item{
+                    height: 200px;
+                    width: 100%;
+                    background: #C9C9C9;
+                    padding: 10px 0;
+                    margin: 5px;
+                    color: #FFF;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                    text-align: center;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        min-height: 200px;
+                    }
+                }
+            }
+            .synced .gallery__thumb-item{
+                background: #0c83e7;
+            }
+        }
+
+    }
 
     .gallery__shown-img-list{
         .gallery__shown-img-item{
