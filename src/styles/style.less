@@ -282,6 +282,10 @@ input:focus:-ms-input-placeholder{
             text-transform: uppercase;
             margin: 0 -10px 0 35px;
             color: #838383;
+            @media only screen and (max-width: 354px){
+                line-height: normal;
+                margin: 0 -10px 0 5px;
+            }
         }
         .link--underline-active{
             color: #ff7435;
@@ -293,6 +297,12 @@ input:focus:-ms-input-placeholder{
         margin-bottom: 72px;
         @media only screen and (max-width: 980px){
             margin-top: -72px;
+        }
+        @media only screen and (max-width: 350px){
+            margin-top: -22px;
+        }
+        @media only screen and (max-width: 300px){
+            margin-top: -44px;
         }
         .promo-slider__item{
             width: 100%;
@@ -307,16 +317,32 @@ input:focus:-ms-input-placeholder{
                     font-weight: 400;
                     line-height: 24px;
                     padding: 90px 15px 0 15px;
+                    @media only screen and (max-width: 354px){
+                        padding: 10px 15px 0 15px;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
                     .promo-slider__item-title{
                         color: #1c1c1c;
                         font-size: 36px;
                         line-height: 42px;
                         margin-bottom: 40px;
                         font-family: @font-family-pt-serif-caption;
+                        @media only screen and (max-width: 354px){
+                            font-size: 16px;
+                            display: block;
+                            line-height: 22px;
+                            background-color: white;
+                            margin-bottom: 0;
+                        }
                         span{
                             background-color: white;
                             padding: 10px;
                             line-height: 57px;
+                            @media only screen and (max-width: 354px){
+                                background-color: transparent;
+                                line-height: 27px;
+                            }
                         }
                     }
                     p{
@@ -324,7 +350,9 @@ input:focus:-ms-input-placeholder{
                             background-color: white;
                             padding: 5px 10px;
                         }
-
+                        @media only screen and (max-width: 354px){
+                            background: white;
+                        }
                     }
                 }
 
@@ -345,9 +373,7 @@ input:focus:-ms-input-placeholder{
         .healthy-rest__slide-item{
             display: none;
             position: relative;
-            padding-top: 65px;
-
-            //background-size: 250%;
+            padding-top: 5.5%;
         }
         .healthy-rest__slide-item-active{
             display: block;
@@ -375,6 +401,9 @@ input:focus:-ms-input-placeholder{
             margin-bottom: 25px;
             text-transform: uppercase;
             font-weight: 500;
+            @media only screen and (max-width: 354px){
+                display: none;
+            }
             .healthy-rest__item{
                 vertical-align: top;
                 margin-left: 6%;
@@ -405,7 +434,9 @@ input:focus:-ms-input-placeholder{
 /* Style for "Gallery" */
 .gallery{
     padding: 60px 0 40px 0;
-
+    @media only screen and (max-width: 354px){
+        display: none;
+    }
     .owl-carousel{
         height: 500px;
         .gallery__shown-img-item{
@@ -479,6 +510,15 @@ input:focus:-ms-input-placeholder{
             }
         }
     }
+    &+.ex-gallery{
+        display: none;
+        @media only screen and (max-width: 354px){
+            display: block;
+            margin-bottom: 50px;
+            width: 321px;
+            height: 260px;
+        }
+    }
 }
 
 /* Style for "Reviews" */
@@ -506,6 +546,9 @@ input:focus:-ms-input-placeholder{
                     margin-right: 10px;
                     margin-bottom: 20px;
                     margin-top: 20px;
+                    @media only screen and (max-width: 354px){
+                        margin-right: 0;
+                    }
                     .reviews__item-header{
                         background: white;
                         padding: 1px;
@@ -537,6 +580,9 @@ input:focus:-ms-input-placeholder{
                         height: 160px;
                         @media only screen and (max-width: 980px){
                             height: 210px;
+                        }
+                        @media only screen and (max-width: 354px){
+                            height: 240px;
                         }
                         .reviews__item-date{
                             display: block;
@@ -731,6 +777,9 @@ input:focus:-ms-input-placeholder{
                             margin-left: -15px;
                             width: 100%;
                             min-width: 390px;
+                            @media only screen and (max-width: 354px){
+                                min-width: 280px;
+                            }
                         }
                     }
                     .brief-info{
