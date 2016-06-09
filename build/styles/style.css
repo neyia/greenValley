@@ -2084,6 +2084,12 @@ input:focus:-ms-input-placeholder {
 }
 /* Single room via avocode*/
 /* Style for "About room" */
+@media only screen and (max-width: 980px) {
+  .about-room .about-room__inner .about-room__information .about-room__slider .owl-item li img,
+  .about-room .about-room__inner .about-room__information .about-room__slider .owl-item li {
+    width: 100%;
+  }
+}
 .about-room .about-room__inner .about-room__information .about-room__slider .about-room__slider-wrapper .about-room__slide-img span {
   right: 20px;
   top: 20px;
@@ -2100,6 +2106,9 @@ input:focus:-ms-input-placeholder {
 }
 .about-room .about-room__inner .about-room__information .about-room__wrapper .room-description .room-description__title:first-child {
   margin: 0 0 25px 0;
+}
+.about-room .about-room__inner .about-room__information .about-room__wrapper .room-description__list-of-features {
+  margin-bottom: 10px;
 }
 .about-room .about-room__inner .about-room__information .about-room__wrapper .room-description__list-of-features .room-description__item {
   vertical-align: top;
