@@ -1368,6 +1368,29 @@ input:focus:-ms-input-placeholder {
   background: transparent;
   color: #ffffff;
 }
+.brief-info {
+  padding: 41px 0;
+}
+.brief-info .brief-info__title {
+  color: #191919;
+  font-family: "PT Serif Caption Regular";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 19px;
+  padding-bottom: 13px;
+}
+.brief-info .brief-info__sum {
+  font-family: "Fira Sans";
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #191919;
+  font-size: 14px;
+}
+.brief-info .brief-info__sum b {
+  color: #ff7435;
+  font-size: 18px;
+}
 /*Home via avocode*/
 /* Style for "Header" */
 .page-header {
@@ -1974,28 +1997,7 @@ input:focus:-ms-input-placeholder {
   }
 }
 .recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .brief-info {
-  padding: 41px 0;
   background: white;
-}
-.recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .brief-info .brief-info__title {
-  color: #191919;
-  font-family: "PT Serif Caption Regular";
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 19px;
-  padding-bottom: 13px;
-}
-.recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .brief-info .brief-info__sum {
-  font-family: "Fira Sans";
-  font-weight: 500;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #191919;
-  font-size: 14px;
-}
-.recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .brief-info .brief-info__sum b {
-  color: #ff7435;
-  font-size: 18px;
 }
 /* Single room via avocode*/
 /* Style for "About room" */
@@ -2037,4 +2039,60 @@ input:focus:-ms-input-placeholder {
   margin: 0;
 }
 /* Rooms via avocode*/
+.rooms .rooms__header {
+  width: 100%;
+  background: url('../img/room_list/slider.jpg') 50% 50%;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 40px 0;
+}
+.rooms .rooms__header .rooms__header-title {
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "PT Serif Caption Regular";
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.rooms .room-categories .room-categories__title {
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "PT Serif Caption Regular";
+  font-weight: normal;
+  margin: 30px 0;
+  text-align: center;
+}
+.rooms .room-categories .room-categories__inner .room-categories__list .room-categories__item {
+  margin-bottom: 20px;
+  border: 1px solid #ebebeb;
+  background-color: #fafafa;
+}
+.rooms .room-categories .room-categories__inner .room-categories__list .room-categories__item .room-categories__img img {
+  width: 100%;
+}
+.rooms .room-categories .room-categories__inner .room-categories__list .room-categories__item .room-categories__buttons {
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .rooms .room-categories .room-categories__inner .room-categories__list .room-categories__item .room-categories__buttons .room-categories__btn {
+    display: block;
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.rooms .room-categories .room-categories__inner .room-categories__list .room-categories__item .room-categories__buttons .room-categories__more {
+  background: transparent;
+  color: #333333;
+  padding: 10px 5px;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .rooms .room-categories .room-categories__inner .room-categories__list .room-categories__item .room-categories__buttons .room-categories__more {
+    display: block;
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
 /* Forms via avocode*/

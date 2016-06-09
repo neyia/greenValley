@@ -146,7 +146,30 @@ input:focus:-ms-input-placeholder{
         color: #ffffff;
     }
 }
+.brief-info{
+    padding: 41px 0;
+    .brief-info__title{
+        color: #191919;
+        font-family: @font-family-pt-serif-caption;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 19px;
+        padding-bottom: 13px;
+    }
+    .brief-info__sum{
+        font-family: @font-family-fira-sans;
+        font-weight: 500;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #191919;
+        font-size: 14px;
+        b{
+            color: #ff7435;
+            font-size: 18px;
+        }
 
+    }
+}
 /*Home via avocode*/
 
 /* Style for "Header" */
@@ -783,29 +806,7 @@ input:focus:-ms-input-placeholder{
                         }
                     }
                     .brief-info{
-                        padding: 41px 0;
                         background: white;
-                        .brief-info__title{
-                            color: #191919;
-                            font-family: @font-family-pt-serif-caption;
-                            font-size: 26px;
-                            font-weight: 400;
-                            line-height: 19px;
-                            padding-bottom: 13px;
-                        }
-                        .brief-info__sum{
-                            font-family: @font-family-fira-sans;
-                            font-weight: 500;
-                            line-height: 24px;
-                            text-transform: uppercase;
-                            color: #191919;
-                            font-size: 14px;
-                            b{
-                                color: #ff7435;
-                                font-size: 18px;
-                            }
-
-                        }
                     }
                 }
                 &:first-child{
@@ -924,17 +925,43 @@ input:focus:-ms-input-placeholder{
 /* Rooms via avocode*/
 .rooms{
     .rooms__header{
-        .rooms__header-title{}
+        width: 100%;
+        background: url('../img/room_list/slider.jpg') 50% 50%;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        padding: 40px 0;
+        .rooms__header-title{
+            font-size: 36px;
+            line-height: 42px;
+            font-family: @font-family-pt-serif-caption;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
         .rooms__header-text{}
     }
     .room-categories{
+        .room-categories__title{
+            font-size: 36px;
+            line-height: 42px;
+            font-family: @font-family-pt-serif-caption;
+            font-weight: normal;
+            margin: 30px 0;
+            text-align: center;
+        }
         .room-categories__inner{
-            .room-categories__title{}
+
             .room-categories__list{
                 .room-categories__item{
+                    margin-bottom: 20px;
+                    border: 1px solid #ebebeb;
+                    background-color: #fafafa;
                     .room-categories__item-text{
+
                         .brief-info{
+
                             .brief-info__title{
+
 
                             }
                             .brief-info__sum{
@@ -942,10 +969,33 @@ input:focus:-ms-input-placeholder{
                             }
                         }
                     }
-                    .room-categories__img{}
+                    .room-categories__img{
+                        img{
+                            width: 100%;
+                        }
+                    }
                     .room-categories__buttons{
-                        .room-categories__btn{}
-                        .room-categories__more{}
+                        margin-top: 20px;
+                        .room-categories__btn{
+                            @media only screen and (max-width: 600px){
+                                display: block;
+                                float: none;
+                                text-align: center;
+                                margin-top: 20px;
+                            }
+                        }
+                        .room-categories__more{
+                            background: transparent;
+                            color: #333333;
+                            padding: 10px 5px;
+                            text-align: center;
+                            @media only screen and (max-width: 600px){
+                                display: block;
+                                float: none;
+                                text-align: center;
+                                margin-top: 20px;
+                            }
+                        }
                         .btn--underline{}
                     }
                 }
