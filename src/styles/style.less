@@ -450,22 +450,38 @@ input:focus:-ms-input-placeholder{
 
 /* Style for "Reviews" */
 .reviews{
-  padding: 65px 0 50px 0;
-  background: rgba(0, 128, 0, 0.42);
-  text-align: center;
+
+    padding:            65px 0 50px 0;
+    background:         #0ab89d url("../img/home/testimonials_img_bg.png") 50% 0% no-repeat;
+    background-size:    cover;
+    text-align: center;
+
+    .reviews__title{
+        color: white;
+        font-family: @font-family-pt-serif-caption;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
     .reviews__inner{
-        .reviews__title{}
+
         .reviews__slider{
             position: relative;
+            padding-bottom: 15px;
             .reviews__list{
                 .reviews__item{
-                    background: #ffffff;
                     margin-right: 10px;
                     margin-bottom: 20px;
-                    min-height: 290px;
+                    margin-top: 20px;
                     .reviews__item-header{
+                        background: white;
+                        padding: 1px;
+                        height: 120px;
                         .reviews__item-img{
-
+                            margin-top: -20px;
+                            img{
+                                border: 1px solid white;
+                            }
                         }
                         .reviews__item-name{
 
@@ -480,8 +496,16 @@ input:focus:-ms-input-placeholder{
                             }
                         }
                     }
+
                     blockquote{
-                        .reviews__item-date{}
+                        margin: 0;
+                        padding: 5px 40px 0 40px;
+                        background: white;
+                        height: 160px;
+                        .reviews__item-date{
+                            display: block;
+                            padding-top: 10px;
+                        }
                     }
                 }
             }
@@ -491,22 +515,35 @@ input:focus:-ms-input-placeholder{
             width: 100%;
             height: 100%;
             .prev{
-                background: transparent;
-                padding: 10px;
-                left: -30px;
+                width: 25px;
+                height: 25px;
                 position: absolute;
-                z-index: 20;
-                top: 50%;
-                font-size: 40px;
+                background: transparent;
+                top: 25%;
+                left: -30px;
+                padding: 0;
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                border: 0 solid transparent;
+                border-left: 2px solid #fff;
+                border-top: 2px solid #fff;
+                .border-radius(0);
             }
             .next{
-                background: transparent;
-                padding: 10px;
-                right: -30px;
+                width: 25px;
+                height: 25px;
                 position: absolute;
-                z-index: 20;
-                top: 50%;
-                font-size: 40px;
+                background: transparent;
+                top: 25%;
+                right: -30px;
+                padding: 0;
+                -webkit-transform: rotate(135deg);
+                -ms-transform: rotate(135deg);
+                transform: rotate(135deg);
+                border-left: 2px solid #fff;
+                border-top: 2px solid #fff;
+                .border-radius(0);
             }
         }
     }
