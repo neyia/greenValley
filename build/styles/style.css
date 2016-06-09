@@ -1392,6 +1392,89 @@ input:focus:-ms-input-placeholder {
   font-size: 18px;
 }
 /*Home via avocode*/
+.fancybox-close {
+  top: 21px;
+  right: 21px;
+}
+.customNavigation,
+.owl-buttons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.customNavigation .prev,
+.owl-buttons .prev,
+.customNavigation .owl-prev,
+.owl-buttons .owl-prev {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: transparent;
+  color: transparent;
+  top: 25%;
+  left: -30px;
+  padding: 0;
+  transform: rotate(-45deg);
+  border: 0 solid transparent;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-radius: 0;
+  -khtml-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -icab-border-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+}
+.customNavigation .next,
+.owl-buttons .next,
+.customNavigation .owl-next,
+.owl-buttons .owl-next {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: transparent;
+  color: transparent;
+  top: 25%;
+  right: -30px;
+  padding: 0;
+  transform: rotate(135deg);
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-radius: 0;
+  -khtml-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -icab-border-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+}
+.customNavigation .owl-prev,
+.owl-buttons .owl-prev {
+  left: 15px;
+  z-index: 20;
+  top: 50%;
+  margin-top: -20px;
+}
+.customNavigation .owl-next,
+.owl-buttons .owl-next {
+  right: 15px;
+  z-index: 20;
+  top: 50%;
+  margin-top: -20px;
+}
+.owl-buttons {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: 50%;
+  margin-top: -40px;
+}
 /* Style for "Header" */
 .page-header {
   background-color: #fff;
@@ -2001,6 +2084,10 @@ input:focus:-ms-input-placeholder {
 }
 /* Single room via avocode*/
 /* Style for "About room" */
+.about-room .about-room__inner .about-room__information .about-room__slider .about-room__slider-wrapper .about-room__slide-img span {
+  right: 20px;
+  top: 20px;
+}
 .about-room .about-room__inner .about-room__information .about-room__wrapper .room-description {
   font-size: 16px;
   line-height: 22px;

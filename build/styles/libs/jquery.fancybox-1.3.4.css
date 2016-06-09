@@ -95,7 +95,7 @@
     height: 22px;
     cursor: pointer;
     z-index: 8040;
-    background: url('../../img/libs/fancy/zoom.png') no-repeat 50% 50%;
+    background: url('../../img/libs/fancy/nonezoom.png') no-repeat 50% 50%;
 }
 .fancybox-nav {
     position: absolute;

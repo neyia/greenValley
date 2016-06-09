@@ -160,7 +160,6 @@ $(document).ready(function(){
 
     $('#sandwich').on('click', function (e) {
         e.preventDefault();
-        //alert('coming soon');
         $('.main-nav--sliding').slideToggle('slow');
     });
 
@@ -172,6 +171,18 @@ $(document).ready(function(){
             return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
         }
 
+    });
+
+    var owlFancy = $("#owl-demo-fancy");
+
+    owlFancy.owlCarousel({
+        items : 1,
+        itemsDesktop      : [1199,1],
+        itemsDesktopSmall     : [979,1],
+        itemsTablet       : [768,1],
+        itemsMobile       : [479,1],
+        navigation: true,
+        pagination: false
     });
 
 });

@@ -171,7 +171,72 @@ input:focus:-ms-input-placeholder{
     }
 }
 /*Home via avocode*/
+.fancybox-close {
+  top: 21px;
+  right: 21px;
+}
+.customNavigation,
+.owl-buttons{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  .prev,
+  .owl-prev{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: transparent;
+    color: transparent;
+    top: 25%;
+    left: -30px;
+    padding: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border: 0 solid transparent;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    .border-radius(0);
+  }
+  .next,
+  .owl-next{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: transparent;
+    color: transparent;
+    top: 25%;
+    right: -30px;
+    padding: 0;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    .border-radius(0);
+  }
+  .owl-prev{
+    left: 15px;
+    z-index: 20;
+    top: 50%;
+    margin-top: -20px;
+  }
+  .owl-next{
+    right: 15px;
+    z-index: 20;
+    top: 50%;
+    margin-top: -20px;
+  }
+}
 
+.owl-buttons{
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: 50%;
+  margin-top: -40px;
+}
 /* Style for "Header" */
 .page-header{
 
@@ -829,7 +894,12 @@ input:focus:-ms-input-placeholder{
             .about-room__slider{
                 .about-room__slide-zoom{}
                 .about-room__slider-wrapper{
-                    .about-room__slide-img{}
+                    .about-room__slide-img{
+                      span{
+                        right: 20px;
+                        top: 20px;
+                      }
+                    }
                 }
             }
             .about-room__wrapper{
