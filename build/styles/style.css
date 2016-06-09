@@ -1794,7 +1794,17 @@ input:focus:-ms-input-placeholder {
 }
 .transport .transport__list .transport__item {
   display: inline-block;
-  width: 300px;
+  vertical-align: top;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  color: #191919;
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.transport .transport__list .transport__item .transport__routes-list {
+  text-align: left;
 }
 /* Style for "Recommendations" */
 .recommendations {
