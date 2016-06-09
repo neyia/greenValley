@@ -2001,7 +2001,41 @@ input:focus:-ms-input-placeholder {
 }
 /* Single room via avocode*/
 /* Style for "About room" */
+.about-room .about-room__inner .about-room__information .about-room__wrapper .room-description {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Fira Sans";
+}
+.about-room .about-room__inner .about-room__information .about-room__wrapper .room-description .room-description__title {
+  font-size: 26px;
+  font-family: "PT Serif Caption Regular";
+  margin: 45px 0 25px 0;
+}
+.about-room .about-room__inner .about-room__information .about-room__wrapper .room-description .room-description__title:first-child {
+  margin: 0 0 25px 0;
+}
+.about-room .about-room__inner .about-room__information .about-room__wrapper .room-description__list-of-features .room-description__item {
+  vertical-align: top;
+  margin-right: 20px;
+}
+.about-room .about-room__inner .about-room__information .about-room__wrapper .room-description__list-of-features .room-description__item ul .room-description__feature {
+  display: block;
+}
+.about-room .about-room__inner .about-room__information .about-room__wrapper .room-description__list-of-features .room-description__item ul .room-description__feature b {
+  color: #ff7435;
+}
 /* Style for "recommendations--gray-bg" */
+.recommendations--gray-bg {
+  background: #f6f6f6;
+}
+.recommendations--gray-bg .recommendations__inner .recommendations__list .recommendations__item {
+  background: transparent;
+  margin: 0;
+}
+.recommendations--gray-bg .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content {
+  display: block;
+  overflow: hidden;
+}
 .page-footer {
   width: 100%;
   box-shadow: 0 -1px 0 #ebebeb;
