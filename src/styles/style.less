@@ -37,7 +37,6 @@ li {
     display: inline-block;
 }
 .fa.fa-calendar-o{
-
     left: 25px;
 }
 
@@ -155,15 +154,7 @@ input:focus:-ms-input-placeholder{
         padding: 15px 10px 10px 10px;
 
         .page-header__main-logo{
-            .main-logo{
-
-                display: inline-block;
-                text-align: center;
-
-                img{
-                    display: inline-block;
-                }
-            }
+            text-align: center;
         }
 
         .page-header__main-nav{
@@ -186,8 +177,7 @@ input:focus:-ms-input-placeholder{
                         margin-left: 20px;
 
                         .main-nav__link{
-                            //font-weight: 400;
-                            font-weight: 300;
+                            font-weight: 400;
                             line-height: normal;
                             text-transform: uppercase;
                             &:hover {
@@ -197,8 +187,7 @@ input:focus:-ms-input-placeholder{
 
                         .active{
                             color: #ff7435;
-                            //font-weight: 400;
-                            font-weight: 300;
+                            font-weight: 400;
                         }
 
                         &:first-child{
@@ -212,16 +201,16 @@ input:focus:-ms-input-placeholder{
         .page-header__contacts{
             color: #191919;
             font-size: 14px;
-            //font-weight: 400;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 18px;
             padding: 5px 0;
 
             .page-header__phone{
                 display: block;
+                font-weight: 400;
+                font-family: @font-family-pt-serif-caption;
                 color: #191919;
                 font-size: 18px;
-                font-weight: 700;
                 text-transform: uppercase;
             }
 
@@ -247,11 +236,10 @@ input:focus:-ms-input-placeholder{
         margin: 0 auto;
         list-style: none;
         text-align: center;
-        top: 428px;
+        top: 508px;
         position: absolute;
         .link--underline{
-            //font-weight: 400;
-            font-weight: 300;
+            font-weight: 400;
             font-size: 14px;
             text-transform: uppercase;
         }
@@ -265,25 +253,26 @@ input:focus:-ms-input-placeholder{
             display: none;
             background: url('../img/home/slider.jpg') no-repeat;
             background-size: cover;
-            height: 320px;
-            .promo-slider__item-inner{
+            height: 428px;
+            .promo-slider__item__inner{
                 .promo-slider__item-text{
-                    width: 483px;
-                    height: 42px;
                     color: #1c1c1c;
                     font-size: 18px;
-                    //font-weight: 400;
-                    font-weight: 300;
+                    font-weight: 400;
                     line-height: 24px;
-                    background-color: white;
+                    padding: 90px 15px 0 15px;
                     .promo-slider__item-title{
-                        width: 566px;
-                        height: 71px;
                         color: #1c1c1c;
-
                         font-size: 36px;
                         line-height: 42px;
                         background-color: white;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        background-color: white;
+                        display: inline-block;
+                        margin-bottom: 15px;
                     }
                 }
 
@@ -302,18 +291,50 @@ input:focus:-ms-input-placeholder{
       font-weight: 300;
         .healthy-rest__slide-item{
             display: none;
+            position: relative;
+            padding-top: 30px;
+            background: url('../img/home/sprite_bg.png') no-repeat 50% 50%;
+            //background-size: 250%;
         }
         .healthy-rest__slide-item-active{
             display: block;
         }
 
-        .healthy-rest__title{}
+        .healthy-rest__title{
+            text-align: center;
+            font-size: 30px;
+            line-height: 32px;
+            color: #191919;
+            margin-bottom: 35px;
+        }
 
-        .healthy-rest__text{}
+        .healthy-rest__text{
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 16px;
+            line-height: 22px;
+            color: #191919;
+        }
 
         .healthy-rest__list{
-
-            .healthy-rest__item{}
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-weight: 500;
+            .healthy-rest__item{
+                span{
+                    background: url('../img/home/_sprite.png') no-repeat;
+                    background-position: 0 0;
+                    display: block;
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 15px;
+                }
+            }
         }
     }
 }
