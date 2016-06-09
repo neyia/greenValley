@@ -1646,6 +1646,26 @@ input:focus:-ms-input-placeholder {
   margin: 0 auto;
   text-align: center;
 }
+.shares .shares__slider-wrapper .shares__slide {
+  position: relative;
+}
+.shares .shares__slider-wrapper .shares__slide .shares__slide-information {
+  position: absolute;
+  top: 0px;
+  background: white;
+}
+.shares .owl-pagination {
+  display: block;
+  text-align: center;
+}
+.shares .owl-pagination .owl-page {
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+  background: rebeccapurple;
+  position: relative;
+  display: inline-block;
+}
 /* Style for "Our location" */
 /* Style for "Recommendations" */
 /* Single room via avocode*/
