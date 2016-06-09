@@ -97,19 +97,19 @@ $(document).ready(function(){
 
     owl.owlCarousel({
         items : 2,
-        itemsDesktop      : [1199,10],
-        itemsDesktopSmall     : [979,10],
-        itemsTablet       : [768,8],
-        itemsMobile       : [479,4],
+        itemsDesktop      : [1199,2],
+        itemsDesktopSmall     : [979,2],
+        itemsTablet       : [768,1],
+        itemsMobile       : [479,1],
         pagination: false
     });
 
     owlL.owlCarousel({
         items : 1,
-        itemsDesktop      : [1199,10],
-        itemsDesktopSmall     : [979,10],
-        itemsTablet       : [768,8],
-        itemsMobile       : [479,4],
+        itemsDesktop      : [1199,1],
+        itemsDesktopSmall     : [979,1],
+        itemsTablet       : [768,1],
+        itemsMobile       : [479,1],
         pagination:true
     });
 
@@ -158,5 +158,11 @@ $(document).ready(function(){
             });
         });
 
-
+    $('#sandwich').on('click', function (e) {
+        e.preventDefault();
+        //alert('coming soon');
+        $('.main-nav--sliding').slideToggle('slow');
+    });
+    
+    
 });

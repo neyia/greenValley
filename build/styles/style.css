@@ -1443,9 +1443,32 @@ input:focus:-ms-input-placeholder {
   text-align: right;
 }
 /* Style for "NavMenu" */
-.main-nav--sliding,
 .page-header__sandwich {
+  position: absolute;
+  right: 33px;
+  top: 22px;
+}
+.page-header__sandwich .sandwich {
+  padding: 5px;
+  display: block;
+}
+.page-header__sandwich .sandwich span {
+  display: block;
+  width: 29px;
+  height: 5px;
+  background: #ff7435;
+  margin: 3px 0 0;
+}
+.main-nav--sliding {
   display: none;
+}
+.main-nav--sliding li {
+  display: block;
+}
+.main-nav--sliding li a {
+  line-height: normal;
+  padding: 10px;
+  display: block;
 }
 /* Style for "Promo" */
 .promo-slider {
@@ -1456,8 +1479,8 @@ input:focus:-ms-input-placeholder {
   margin: 0 auto;
   list-style: none;
   text-align: center;
-  top: 531px;
-  position: absolute;
+  top: 441px;
+  position: relative;
 }
 .promo-slider .promo-slider__wrapper .promo-slider__pagination li {
   margin-right: 10px;
@@ -1475,6 +1498,11 @@ input:focus:-ms-input-placeholder {
 .promo-slider .promo-slider__list {
   padding: 0;
   margin-bottom: 72px;
+}
+@media only screen and (max-width: 980px) {
+  .promo-slider .promo-slider__list {
+    margin-top: -72px;
+  }
 }
 .promo-slider .promo-slider__list .promo-slider__item {
   width: 100%;
@@ -1547,7 +1575,7 @@ input:focus:-ms-input-placeholder {
 }
 .healthy-rest .healthy-rest__inner .healthy-rest__list .healthy-rest__item {
   vertical-align: top;
-  margin-left: 44px;
+  margin-left: 6%;
   text-align: center;
   font-family: "Fira Sans";
   font-size: 14px;
@@ -1564,6 +1592,11 @@ input:focus:-ms-input-placeholder {
 }
 .healthy-rest .healthy-rest__inner .healthy-rest__list .healthy-rest__item:first-child {
   margin-left: 0;
+}
+@media only screen and (max-width: 980px) {
+  .healthy-rest .healthy-rest__inner .healthy-rest__list .healthy-rest__item:first-child {
+    margin-left: 6%;
+  }
 }
 /* Style for "Gallery" */
 .gallery {
@@ -1620,6 +1653,7 @@ input:focus:-ms-input-placeholder {
 }
 /* Style for "Reviews" */
 .reviews {
+  overflow: hidden;
   padding: 65px 0 50px 0;
   background: #0ab89d url("../img/home/testimonials_img_bg.png") 50% 0% no-repeat;
   background-size: cover;
@@ -1656,6 +1690,11 @@ input:focus:-ms-input-placeholder {
   padding: 5px 40px 0 40px;
   background: white;
   height: 160px;
+}
+@media only screen and (max-width: 980px) {
+  .reviews .reviews__inner .reviews__slider .reviews__list .reviews__item blockquote {
+    height: 210px;
+  }
 }
 .reviews .reviews__inner .reviews__slider .reviews__list .reviews__item blockquote .reviews__item-date {
   display: block;
@@ -1830,14 +1869,30 @@ input:focus:-ms-input-placeholder {
 }
 .recommendations .recommendations__inner .recommendations__list .recommendations__item {
   vertical-align: top;
-  width: 379px;
-  margin-left: 20px;
+  background: white;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 980px) {
+  .recommendations .recommendations__inner .recommendations__list .recommendations__item {
+    background: transparent;
+    margin-right: 0;
+  }
 }
 .recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content {
   display: block;
 }
+@media only screen and (max-width: 980px) {
+  .recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content {
+    overflow: hidden;
+  }
+}
 .recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .recommendations__item-img {
   background: white;
+}
+.recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .recommendations__item-img img {
+  margin-left: -15px;
+  width: 100%;
+  min-width: 390px;
 }
 .recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .brief-info {
   padding: 41px 0;
@@ -1863,15 +1918,13 @@ input:focus:-ms-input-placeholder {
   color: #ff7435;
   font-size: 18px;
 }
-.recommendations .recommendations__inner .recommendations__list .recommendations__item:first-child {
-  margin: 0;
-}
 /* Single room via avocode*/
 /* Style for "About room" */
 /* Style for "recommendations--gray-bg" */
 .page-footer {
   width: 100%;
   box-shadow: 0 -1px 0 #ebebeb;
+  overflow: hidden;
 }
 .page-footer .page-footer__inner {
   padding: 25px 0;

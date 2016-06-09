@@ -231,9 +231,36 @@ input:focus:-ms-input-placeholder{
 }
 
 /* Style for "NavMenu" */
-.main-nav--sliding,
+
 .page-header__sandwich{
+    position: absolute;
+    right: 33px;
+    top: 22px;
+    .sandwich{
+        padding: 5px;
+        display: block;
+        span{
+            display: block;
+            width: 29px;
+            height: 5px;
+            background: #ff7435;
+            margin: 3px 0 0;
+        }
+    }
+}
+
+.main-nav--sliding{
     display: none;
+    li{
+        display: block;
+
+        a{
+            line-height: normal;
+            padding: 10px;
+            display: block;
+        }
+
+    }
 }
 /* Style for "Promo" */
 .promo-slider{
@@ -244,8 +271,8 @@ input:focus:-ms-input-placeholder{
         margin: 0 auto;
         list-style: none;
         text-align: center;
-        top: 531px;
-        position: absolute;
+        top: 441px;
+        position: relative;
         .promo-slider__pagination li{
             margin-right: 10px;
         }
@@ -264,6 +291,9 @@ input:focus:-ms-input-placeholder{
     .promo-slider__list{
         padding: 0;
         margin-bottom: 72px;
+        @media only screen and (max-width: 980px){
+            margin-top: -72px;
+        }
         .promo-slider__item{
             width: 100%;
             display: none;
@@ -347,7 +377,7 @@ input:focus:-ms-input-placeholder{
             font-weight: 500;
             .healthy-rest__item{
                 vertical-align: top;
-                margin-left: 44px;
+                margin-left: 6%;
                 text-align: center;
                 font-family: @font-family-fira-sans;
                 font-size: 14px;
@@ -363,6 +393,9 @@ input:focus:-ms-input-placeholder{
                 }
                 &:first-child{
                     margin-left: 0;
+                    @media only screen and (max-width: 980px){
+                        margin-left: 6%;
+                    }
                 }
             }
         }
@@ -450,7 +483,7 @@ input:focus:-ms-input-placeholder{
 
 /* Style for "Reviews" */
 .reviews{
-
+    overflow: hidden;
     padding:            65px 0 50px 0;
     background:         #0ab89d url("../img/home/testimonials_img_bg.png") 50% 0% no-repeat;
     background-size:    cover;
@@ -502,6 +535,9 @@ input:focus:-ms-input-placeholder{
                         padding: 5px 40px 0 40px;
                         background: white;
                         height: 160px;
+                        @media only screen and (max-width: 980px){
+                            height: 210px;
+                        }
                         .reviews__item-date{
                             display: block;
                             padding-top: 10px;
@@ -677,13 +713,25 @@ input:focus:-ms-input-placeholder{
         .recommendations__list{
             .recommendations__item{
                 vertical-align: top;
-                width: 379px;
-                margin-left: 20px;
+                background: white;
+                margin-right: 20px;
+                @media only screen and (max-width: 980px){
+                    background: transparent;
+                    margin-right: 0;
+                }
                 .recommendations__item-content{
                     display: block;
+                    @media only screen and (max-width: 980px){
+                        overflow: hidden;
+                    }
                     .recommendations__item-img{
 
                         background: white;
+                        img{
+                            margin-left: -15px;
+                            width: 100%;
+                            min-width: 390px;
+                        }
                     }
                     .brief-info{
                         padding: 41px 0;
@@ -712,7 +760,7 @@ input:focus:-ms-input-placeholder{
                     }
                 }
                 &:first-child{
-                    margin: 0;
+                    //margin: 0;
                 }
             }
         }
@@ -783,6 +831,7 @@ input:focus:-ms-input-placeholder{
 .page-footer {
     width: 100%;
     box-shadow: 0 -1px 0 #ebebeb;
+    overflow: hidden;
     .page-footer__inner {
         padding: 25px 0;
     }
