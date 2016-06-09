@@ -1585,19 +1585,18 @@ input:focus:-ms-input-placeholder {
   min-height: 500px;
 }
 .gallery #sync2 {
-  height: 200px;
+  height: 115px;
 }
 .gallery #sync2 .owl-wrapper-outer {
-  height: 200px;
+  height: 115px;
 }
 .gallery #sync2 .owl-wrapper-outer .owl-item {
-  height: 200px;
+  height: 115px;
 }
 .gallery #sync2 .owl-wrapper-outer .owl-item .gallery__thumb-item {
-  height: 200px;
+  height: 115px;
   width: 100%;
   background: #C9C9C9;
-  padding: 10px 0;
   margin: 5px;
   color: #FFF;
   border-radius: 3px;
@@ -1607,9 +1606,17 @@ input:focus:-ms-input-placeholder {
 .gallery #sync2 .owl-wrapper-outer .owl-item .gallery__thumb-item img {
   width: 100%;
   min-height: 200px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.3s ease all;
 }
-.gallery #sync2 .owl-wrapper-outer .synced .gallery__thumb-item {
-  background: #0c83e7;
+.gallery #sync2 .owl-wrapper-outer .owl-item .gallery__thumb-item:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+.gallery #sync2 .owl-wrapper-outer .synced .gallery__thumb-item img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 /* Style for "Reviews" */
 .reviews {

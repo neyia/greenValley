@@ -392,16 +392,15 @@ input:focus:-ms-input-placeholder{
     }
 
     #sync2{
-        height: 200px;
+        height: 115px;
         .owl-wrapper-outer{
-            height: 200px;
+            height: 115px;
             .owl-item{
-                height: 200px;
+                height: 115px;
                 .gallery__thumb-item{
-                    height: 200px;
+                    height: 115px;
                     width: 100%;
                     background: #C9C9C9;
-                    padding: 10px 0;
                     margin: 5px;
                     color: #FFF;
                     -webkit-border-radius: 3px;
@@ -409,14 +408,27 @@ input:focus:-ms-input-placeholder{
                     border-radius: 3px;
                     text-align: center;
                     cursor: pointer;
+
                     img{
                         width: 100%;
                         min-height: 200px;
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                        .transition();
+                    }
+                    &:hover{
+                        img{
+                            -webkit-filter: grayscale(0);
+                            filter: grayscale(0);
+                        }
                     }
                 }
             }
             .synced .gallery__thumb-item{
-                background: #0c83e7;
+               img{
+                   -webkit-filter: grayscale(0);
+                   filter: grayscale(0);
+               }
             }
         }
 
