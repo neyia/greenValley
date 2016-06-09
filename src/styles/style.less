@@ -642,7 +642,15 @@ input:focus:-ms-input-placeholder{
             font-size: 16px;
             font-weight: 400;
             line-height: 22px;
-            .transport__title{}
+            .transport__title{
+                padding:1px 0 5px 0;
+                color: #191919;
+                font-family: @font-family-fira-sans;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
             .transport__routes-list{
                 text-align: left;
                 .transport__routes-item{
@@ -656,20 +664,55 @@ input:focus:-ms-input-placeholder{
 /* Style for "Recommendations" */
 .recommendations{
     padding: 65px 0 50px 0;
-    background: rgba(0, 128, 0, 0.42);
+    background: url("../img/home/off_bg.png") no-repeat;
+    background-size: cover;
     text-align: center;
     .recommendations__inner{
-        .recommendations__title{}
+        .recommendations__title{
+            color: white;
+            font-family: @font-family-pt-serif-caption;
+            font-size: 30px;
+            padding-bottom: 34px;
+        }
         .recommendations__list{
             .recommendations__item{
+                vertical-align: top;
+                width: 379px;
+                margin-left: 20px;
                 .recommendations__item-content{
+                    display: block;
                     .recommendations__item-img{
 
+                        background: white;
                     }
                     .brief-info{
-                        .brief-info__title{}
-                        .brief-info__sum{}
+                        padding: 41px 0;
+                        background: white;
+                        .brief-info__title{
+                            color: #191919;
+                            font-family: @font-family-pt-serif-caption;
+                            font-size: 26px;
+                            font-weight: 400;
+                            line-height: 19px;
+                            padding-bottom: 13px;
+                        }
+                        .brief-info__sum{
+                            font-family: @font-family-fira-sans;
+                            font-weight: 500;
+                            line-height: 24px;
+                            text-transform: uppercase;
+                            color: #191919;
+                            font-size: 14px;
+                            b{
+                                color: #ff7435;
+                                font-size: 18px;
+                            }
+
+                        }
                     }
+                }
+                &:first-child{
+                    margin: 0;
                 }
             }
         }
@@ -736,6 +779,49 @@ input:focus:-ms-input-placeholder{
         .recommendations__list--center{}
     }
 }
+
+.page-footer {
+    width: 100%;
+    box-shadow: 0 -1px 0 #ebebeb;
+    .page-footer__inner {
+        padding: 25px 0;
+    }
+    .page-footer__address {
+        color: #191919;
+        font-family: @font-family-fira-sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .page-footer__fast-contacts {
+        a {
+            color: #191919;
+            font-family: @font-family-fira-sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+
+            &:hover {
+                color: @color-warning;
+            }
+        }
+    }
+    .social-links li{
+        a i{
+            height: 20px;
+            color: #0ab89d;
+            font-size: 23px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-left: 15px;
+        }
+        &:first-child{
+            margin: 0;
+        }
+    }
+}
+
 
 /* Rooms via avocode*/
 .rooms{

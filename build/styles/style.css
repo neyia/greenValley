@@ -1803,17 +1803,106 @@ input:focus:-ms-input-placeholder {
   font-weight: 400;
   line-height: 22px;
 }
+.transport .transport__list .transport__item .transport__title {
+  padding: 1px 0 5px 0;
+  color: #191919;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
 .transport .transport__list .transport__item .transport__routes-list {
   text-align: left;
 }
 /* Style for "Recommendations" */
 .recommendations {
   padding: 65px 0 50px 0;
-  background: rgba(0, 128, 0, 0.42);
+  background: url("../img/home/off_bg.png") no-repeat;
+  background-size: cover;
   text-align: center;
+}
+.recommendations .recommendations__inner .recommendations__title {
+  color: white;
+  font-family: "PT Serif Caption Regular";
+  font-size: 30px;
+  padding-bottom: 34px;
+}
+.recommendations .recommendations__inner .recommendations__list .recommendations__item {
+  vertical-align: top;
+  width: 379px;
+  margin-left: 20px;
+}
+.recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content {
+  display: block;
+}
+.recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .recommendations__item-img {
+  background: white;
+}
+.recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .brief-info {
+  padding: 41px 0;
+  background: white;
+}
+.recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .brief-info .brief-info__title {
+  color: #191919;
+  font-family: "PT Serif Caption Regular";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 19px;
+  padding-bottom: 13px;
+}
+.recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .brief-info .brief-info__sum {
+  font-family: "Fira Sans";
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #191919;
+  font-size: 14px;
+}
+.recommendations .recommendations__inner .recommendations__list .recommendations__item .recommendations__item-content .brief-info .brief-info__sum b {
+  color: #ff7435;
+  font-size: 18px;
+}
+.recommendations .recommendations__inner .recommendations__list .recommendations__item:first-child {
+  margin: 0;
 }
 /* Single room via avocode*/
 /* Style for "About room" */
 /* Style for "recommendations--gray-bg" */
+.page-footer {
+  width: 100%;
+  box-shadow: 0 -1px 0 #ebebeb;
+}
+.page-footer .page-footer__inner {
+  padding: 25px 0;
+}
+.page-footer .page-footer__address {
+  color: #191919;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.page-footer .page-footer__fast-contacts a {
+  color: #191919;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.page-footer .page-footer__fast-contacts a:hover {
+  color: #ff7435;
+}
+.page-footer .social-links li a i {
+  height: 20px;
+  color: #0ab89d;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: 15px;
+}
+.page-footer .social-links li:first-child {
+  margin: 0;
+}
 /* Rooms via avocode*/
 /* Forms via avocode*/
