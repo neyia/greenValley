@@ -1,62 +1,74 @@
 <form action="" class="main-form">
 
     <section class="booking">
-        <div class="booking__wrapper">
-            <h1 class="booking__title">Бронирование</h1>
-            <p class="booking__information">
-                Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону:
-                <b class="booking__phone-number">+7 812 777-55-88</b>
-            </p>
+        <div class="booking__inner container">
+
+            <div class="row">
+                <h1 class="booking__title col-md-12">Бронирование</h1>
+                <p class="booking__information col-md-4 col-md-offset-4">
+                    Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону:
+                    <b class="booking__phone-number">+7 812 777-55-88</b>
+                </p>
+
+            </div>
+
         </div>
     </section>
 
     <section class="date-of-rest" id="date-of-rest">
-        <div class="date-of-rest__wrapper">
-            <p class="date-of-rest__step step">шаг 1</p>
-            <h1 class="date-of-rest__title">Дата отдыха</h1>
-            <ul class="date-of-rest__choice choice-block">
-                <li class="date-of-rest__depart choice-block__item">
-                    <label for="dayOfDepart">дата въезда</label><br/>
-                    <input type="text" name="dayOfDepart" maxlength="2" id="dayOfDepart" placeholder="дд">
-                    <input type="text" name="monthOfDepart" maxlength="2" placeholder="мм">
-                    <input type="text" name="yearOfDepart" maxlength="4" placeholder="гггг">
-                </li>
-                <li class="date-of-rest__return choice-block__item">
-                    <label for="dayOfReturn">дата выезда</label><br/>
-                    <input type="text" name="dayOfReturn" maxlength="2" id="dayOfReturn" placeholder="дд">
-                    <input type="text" name="monthOfReturn" maxlength="2" placeholder="мм">
-                    <input type="text" name="yearOfReturn" maxlength="4" placeholder="гггг">
-                </li>
-            </ul>
+        <div class="date-of-rest__inner container">
+            <div class="row">
+                <p class="date-of-rest__step step">шаг 1</p>
+                <h1 class="date-of-rest__title">Дата отдыха</h1>
+                <ul class="date-of-rest__choice choice-block col-md-4 col-md-offset-4">
+                    <li class="date-of-rest__depart choice-block__item">
+                        <label for="dayOfDepart">дата въезда</label><br/>
+                        <input type="text" name="dayOfDepart" maxlength="2" id="dayOfDepart" placeholder="дд">
+                        <input type="text" name="monthOfDepart" maxlength="2" placeholder="мм">
+                        <input type="text" name="yearOfDepart" maxlength="4" placeholder="гггг">
+                    </li>
+                    <li class="date-of-rest__return choice-block__item">
+                        <label for="dayOfReturn">дата выезда</label><br/>
+                        <input type="text" name="dayOfReturn" maxlength="2" id="dayOfReturn" placeholder="дд">
+                        <input type="text" name="monthOfReturn" maxlength="2" placeholder="мм">
+                        <input type="text" name="yearOfReturn" maxlength="4" placeholder="гггг">
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section class="place-for-living" id="placeForLiving">
-        <div class="place-for-living__wrapper">
-            <p class="place-for-living__step step">шаг 2</p>
-            <h2 class="place-for-living__title">Место проживания</h2>
-            <ul class="place-for-living__list choice-block ">
+        <div class="place-for-living__inner container">
+            <div class="row">
+                <p class="place-for-living__step step">шаг 2</p>
+                <h2 class="place-for-living__title">Место проживания</h2>
+                <ul class="place-for-living__list choice-block col-md-4 col-md-offset-4">
                 <li class="place-for-living__item choice-block__item">
                     <label for="hotel">
                         <input type="radio" checked name="placeForLiving" id="hotel">
                         <span class="place-for-living__item--text">отель</span>
+                        <img src="img/form/hotel.svg" alt="s" />
                     </label>
                 </li>
                 <li class="place-for-living__item choice-block__item">
                     <label for="cottage">
                         <input type="radio" name="placeForLiving" id="cottage">
                         <span class="place-for-living__item--text">коттедж</span>
+                        <img src="img/form/cottage.svg" alt="c"/>
                     </label>
                 </li>
             </ul>
+            </div>
         </div>
     </section>
 
     <section class="type-of-cottage" id="typeOfCottage">
-        <div class="type-of-cottage__wrapper">
-            <p class="type-of-cottage__step step">шаг 3</p>
-            <h2 class="type-of-cottage__title">Тип коттеджа</h2>
-            <div class="type-of-cottage__list-wrapper">
+        <div class="type-of-cottage__inner container">
+            <div class="row">
+                <p class="type-of-cottage__step step">шаг 3</p>
+                <h2 class="type-of-cottage__title">Тип коттеджа</h2>
+                <div class="type-of-cottage__list-wrapper col-md-8 col-md-offset-2">
                 <ul class="type-of-cottage__list choice-block ">
                     <li class="type-of-cottage__item choice-block__item">
                         <label for="cottage1">
@@ -119,6 +131,7 @@
                         </label>
                     </li>
                 </ul>
+            </div>
             </div>
         </div>
     </section>

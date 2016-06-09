@@ -2226,3 +2226,113 @@ input:focus:-ms-input-placeholder {
   }
 }
 /* Forms via avocode*/
+.main-form .booking .booking__inner {
+  padding: 50px 0;
+}
+.main-form .booking .booking__inner .booking__title {
+  text-align: center;
+  color: black;
+  font-family: "PT Serif Caption Regular";
+  font-size: 30px;
+  margin-bottom: 26px;
+}
+.main-form .booking .booking__inner .booking__information {
+  /* Base text style */
+  width: 379px;
+  height: 56px;
+  font-family: "Fira Sans";
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  font-weight: 400;
+}
+.main-form .booking .booking__inner .booking__information .booking__phone-number {
+  /* Text style for "+7 812 777-55-" */
+  color: #eb6a2f;
+  font-weight: 500;
+}
+.main-form .date-of-rest {
+  background-color: #f1f1f1;
+}
+.main-form .date-of-rest .date-of-rest__inner {
+  padding: 50px 0;
+}
+.main-form .date-of-rest .date-of-rest__inner .date-of-rest__step {
+  /* Text style for "Шаг 1" */
+  color: #929292;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-form .date-of-rest .date-of-rest__inner .date-of-rest__title {
+  text-align: center;
+  color: #191919;
+  font-family: "PT Serif Caption Regular";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.main-form .date-of-rest .date-of-rest__inner .date-of-rest__choice.choice-block {
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
+.main-form .date-of-rest .date-of-rest__inner .date-of-rest__choice.choice-block .choice-block__item label {
+  width: 92px;
+  height: 12px;
+  color: #4c4c4c;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.main-form .date-of-rest .date-of-rest__inner .date-of-rest__choice.choice-block .choice-block__item input {
+  /* Style for "Left & Right c" */
+  width: 40px;
+  height: 27px;
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
+.main-form .place-for-living .place-for-living__inner {
+  padding: 50px 0;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__step {
+  color: #929292;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__title {
+  text-align: center;
+  color: #191919;
+  font-family: "PT Serif Caption Regular";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.main-form .type-of-cottage .type-of-cottage__inner {
+  padding: 50px 0;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__step {
+  color: #929292;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__title {
+  text-align: center;
+  color: #191919;
+  font-family: "PT Serif Caption Regular";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 19px;
+}

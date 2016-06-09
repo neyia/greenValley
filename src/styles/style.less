@@ -1108,32 +1108,103 @@ input:focus:-ms-input-placeholder{
 /* Forms via avocode*/
 .main-form{
     .booking{
-        .booking__wrapper{
-            .booking__title{}
+        .booking__inner{
+
+          padding: 50px 0;
+            .booking__title{
+              text-align: center;
+              color: black;
+              font-family: @font-family-pt-serif-caption;
+              font-size: 30px;
+              margin-bottom: 26px;
+            }
             .booking__information{
-                .booking__phone-number{}
+              /* Base text style */
+              width: 379px;
+              height: 56px;
+              font-family: @font-family-fira-sans;
+              font-size: 16px;
+              line-height: 20px;
+              color: black;
+              font-weight: 400;
+                .booking__phone-number{
+                  /* Text style for "+7 812 777-55-" */
+                  color: #eb6a2f;
+                  font-weight: 500;
+                }
 
             }
         }
     }
     .date-of-rest{
-        .date-of-rest__wrapper{
-            .date-of-rest__step{}
+      background-color: #f1f1f1;
+        .date-of-rest__inner{
+          padding: 50px 0;
+            .date-of-rest__step{
+              /* Text style for "Шаг 1" */
+              color: #929292;
+              font-family: @font-family-fira-sans;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 18px;
+              text-transform: uppercase;
+              text-align: center;
+            }
             .step{}
-            .date-of-rest__title{}
+            .date-of-rest__title{
+              text-align: center;
+              color: #191919;
+              font-family: @font-family-pt-serif-caption;
+              font-size: 26px;
+              font-weight: 400;
+              line-height: 19px;
+            }
             .date-of-rest__choice.choice-block{
-                .date-of-rest__depart.choice-block__item{
-                    label{}
-                    input{}
+              background-color: white;
+              border: 1px solid #ebebeb;
+                .choice-block__item{
+                    label{
+                      width: 92px;
+                      height: 12px;
+                      color: #4c4c4c;
+                      font-family: @font-family-fira-sans;
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 18px;
+                      text-transform: uppercase;
+                    }
+                    input{
+                      /* Style for "Left & Right c" */
+                      width: 40px;
+                      height: 27px;
+                      background-color: white;
+                      border: 1px solid #ebebeb;
+                    }
                 }
             }
         }
     }
     .place-for-living{
-        .place-for-living__wrapper{
-            .place-for-living__step{}
+        .place-for-living__inner{
+          padding: 50px 0;
+            .place-for-living__step{
+              color: #929292;
+              font-family: @font-family-fira-sans;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 18px;
+              text-transform: uppercase;
+              text-align: center;
+            }
             .step{}
-            .place-for-living__title{}
+            .place-for-living__title{
+              text-align: center;
+              color: #191919;
+              font-family: @font-family-pt-serif-caption;
+              font-size: 26px;
+              font-weight: 400;
+              line-height: 19px;
+            }
             .place-for-living__list.choice-block{
                 .place-for-living__item.choice-block__item{
                     .place-for-living__item--text{}
@@ -1142,9 +1213,25 @@ input:focus:-ms-input-placeholder{
         }
     }
     .type-of-cottage{
-        .type-of-cottage__wrapper{
-            .type-of-cottage__step{}
-            .type-of-cottage__title{}
+        .type-of-cottage__inner{
+          padding: 50px 0;
+            .type-of-cottage__step{
+              color: #929292;
+              font-family: @font-family-fira-sans;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 18px;
+              text-transform: uppercase;
+              text-align: center;
+            }
+            .type-of-cottage__title{
+              text-align: center;
+              color: #191919;
+              font-family: @font-family-pt-serif-caption;
+              font-size: 26px;
+              font-weight: 400;
+              line-height: 19px;
+            }
             .type-of-cottage__list-wrapper{
                 .type-of-cottage__list.choice-block{
                     .type-of-cottage__item.choice-block__item{
