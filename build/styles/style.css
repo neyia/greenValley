@@ -2090,9 +2090,22 @@ input:focus:-ms-input-placeholder {
     width: 100%;
   }
 }
+.about-room .about-room__inner .about-room__information .about-room__slider .about-room__slider-wrapper .about-room__slide-img img {
+  width: 100%;
+  min-width: 560px;
+  height: auto;
+  min-height: 397px;
+}
 .about-room .about-room__inner .about-room__information .about-room__slider .about-room__slider-wrapper .about-room__slide-img span {
   right: 20px;
   top: 20px;
+}
+.about-room .about-room__inner .about-room__information .about-room__slider .about-room__slider-wrapper .about-room__slide-img span img {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  min-height: 20px;
+  background: rgba(1, 0, 0, 0.05);
 }
 .about-room .about-room__inner .about-room__information .about-room__wrapper .room-description {
   font-size: 16px;
