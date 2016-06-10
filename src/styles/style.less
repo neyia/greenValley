@@ -494,7 +494,7 @@ li {
   text-align: center;
 
       .shares__title{
-          color: black;
+          color: #000000;
           font-family: @font-family-pt-serif-caption;
           padding-bottom: 35px;
           font-size: 30px;
@@ -793,130 +793,105 @@ li {
 
 /* Forms via avocode*/
 .main-form{
-    .booking{
-        .booking__inner{
+    
+    .booking .booking__inner{
+        padding: 50px 0;
 
-          padding: 50px 0;
-            .booking__title{
-              text-align: center;
-              color: black;
-              font-family: @font-family-pt-serif-caption;
-              font-size: 30px;
-              margin-bottom: 26px;
-            }
-            .booking__information{
-              /* Base text style */
-              width: 379px;
-              height: 56px;
-              font-family: @font-family-fira-sans;
-              font-size: 16px;
-              line-height: 20px;
-              color: black;
-              font-weight: 400;
-                .booking__phone-number{
-                  /* Text style for "+7 812 777-55-" */
-                  color: #eb6a2f;
-                  font-weight: 500;
-                }
+        .booking__title{
+          text-align: center;
+          color: #000000;
+          font-family: @font-family-pt-serif-caption;
+          font-size: 30px;
+          margin-bottom: 26px;
+        }
 
+        .booking__information{
+            font-family: @font-family-fira-sans;
+            color: #000000;
+            .font-styles(16px,20px,400);
+
+            .booking__phone-number{
+              color: @color-warning;
+              font-weight: 500;
             }
+
         }
     }
+    
     .date-of-rest{
-      background-color: #f1f1f1;
+      background-color: @bg-section-form;
         .date-of-rest__inner{
           padding: 50px 0;
+
             .date-of-rest__step{
-              /* Text style for "Шаг 1" */
               color: #929292;
               font-family: @font-family-fira-sans;
-              font-size: 14px;
-              font-weight: 500;
-              line-height: 18px;
               text-transform: uppercase;
               text-align: center;
+              .font-styles(14px,18px,500);
             }
-            .step{}
             .date-of-rest__title{
               text-align: center;
               color: @color-base;
               font-family: @font-family-pt-serif-caption;
-              font-size: 26px;
-              font-weight: 400;
-              line-height: 19px;
+              .font-styles(26px,19px,400);
             }
             .date-of-rest__choice.choice-block{
               background-color: #ffffff;
               border: 1px solid @border-color;
-                .choice-block__item{
-                    label{
-                      width: 92px;
-                      height: 12px;
-                      color: #4c4c4c;
-                      font-family: @font-family-fira-sans;
-                      font-size: 14px;
-                      font-weight: 400;
-                      line-height: 18px;
-                      text-transform: uppercase;
-                    }
-                    input{
-                      /* Style for "Left & Right c" */
-                      width: 40px;
-                      height: 27px;
-                      background-color: #ffffff;
-                      border: 1px solid @border-color;
-                    }
+
+              .choice-block__item label{
+                  font-family: @font-family-fira-sans;
+                  text-transform: uppercase;
+                  .font-styles(14px,18px,400);
+              }
+
+              .choice-block__item input{
+                  /* Style for "Left & Right c" */
+                  width: 40px;
+                  height: 27px;
+                  background-color: #ffffff;
+                  border: 1px solid @border-color;
                 }
+
             }
         }
     }
+    
     .place-for-living{
         .place-for-living__inner{
           padding: 50px 0;
             .place-for-living__step{
               color: #929292;
               font-family: @font-family-fira-sans;
-              font-size: 14px;
-              font-weight: 500;
-              line-height: 18px;
               text-transform: uppercase;
               text-align: center;
+              .font-styles(14px,18px,500);
             }
-            .step{}
             .place-for-living__title{
               text-align: center;
               color: @color-base;
               font-family: @font-family-pt-serif-caption;
-              font-size: 26px;
-              font-weight: 400;
-              line-height: 19px;
-            }
-            .place-for-living__list.choice-block{
-                .place-for-living__item.choice-block__item{
-                    .place-for-living__item--text{}
-                }
+              .font-styles(26px,19px,400);
             }
         }
     }
+    
     .type-of-cottage{
         .type-of-cottage__inner{
           padding: 50px 0;
             .type-of-cottage__step{
               color: #929292;
               font-family: @font-family-fira-sans;
-              font-size: 14px;
-              font-weight: 500;
-              line-height: 18px;
               text-transform: uppercase;
               text-align: center;
+              .font-styles(14px,18px,500);
             }
             .type-of-cottage__title{
               text-align: center;
               color: @color-base;
               font-family: @font-family-pt-serif-caption;
-              font-size: 26px;
-              font-weight: 400;
-              line-height: 19px;
+              .font-styles(26px,19px,400);
             }
             .type-of-cottage__list-wrapper{
                 .type-of-cottage__list.choice-block{
@@ -932,6 +907,7 @@ li {
             }
         }
     }
+    
     .personal-data{
         .personal-data__wrapper{
             .personal-data__step.step{}
@@ -944,6 +920,7 @@ li {
             }
         }
     }
+    
     .payment{
         .payment__wrapper{
             .payment__step.step{}
