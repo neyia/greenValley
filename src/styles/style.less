@@ -153,7 +153,6 @@ li {
     display: none;
     li{
         display: block;
-
         a{
             line-height: normal;
             padding: 10px;
@@ -173,15 +172,16 @@ li {
         text-align: center;
         top: 441px;
         position: relative;
+
         .promo-slider__pagination li{
             margin-right: 10px;
         }
         .link--underline{
-            font-weight: 400;
-            font-size: 14px;
             text-transform: uppercase;
             margin: 0 -10px 0 35px;
             color: #838383;
+            .font-styles(14px,1.4,400);
+
             @media only screen and (max-width: 354px){
                 line-height: normal;
                 margin: 0 -10px 0 5px;
@@ -195,6 +195,7 @@ li {
     .promo-slider__list{
         padding: 0;
         margin-bottom: 72px;
+
         @media only screen and (max-width: 980px){
             margin-top: -72px;
         }
@@ -204,60 +205,57 @@ li {
         @media only screen and (max-width: 300px){
             margin-top: -44px;
         }
+
         .promo-slider__item{
             width: 100%;
+            height: 431px;
             display: none;
             background: url('../img/home/slider.jpg') no-repeat;
             background-size: cover;
-            height: 431px;
-            .promo-slider__item__inner{
-                .promo-slider__item-text{
+
+            .promo-slider__item-text{
+                color: #1c1c1c;
+                padding: 90px 15px 0 15px;
+                .font-styles(18px,24px,400);
+
+                @media only screen and (max-width: 354px){
+                      padding: 10px 15px 0 15px;
+                      .font-styles(14px,20px,400);
+                }
+                .promo-slider__item-title{
                     color: #1c1c1c;
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    padding: 90px 15px 0 15px;
+                    margin-bottom: 40px;
+                    font-family: @font-family-pt-serif-caption;
+                    .font-styles(36px,42px,400);
+                  
                     @media only screen and (max-width: 354px){
-                        padding: 10px 15px 0 15px;
-                        font-size: 14px;
-                        line-height: 20px;
+                        display: block;
+                        background-color: #ffffff;
+                        margin-bottom: 0;
+                        .font-styles(16px,22px,400);
                     }
-                    .promo-slider__item-title{
-                        color: #1c1c1c;
-                        font-size: 36px;
-                        line-height: 42px;
-                        margin-bottom: 40px;
-                        font-family: @font-family-pt-serif-caption;
+                    span{
+                        background-color: #ffffff;
+                        padding: 10px;
+                        line-height: 57px;
                         @media only screen and (max-width: 354px){
-                            font-size: 16px;
-                            display: block;
-                            line-height: 22px;
-                            background-color: white;
-                            margin-bottom: 0;
-                        }
-                        span{
-                            background-color: white;
-                            padding: 10px;
-                            line-height: 57px;
-                            @media only screen and (max-width: 354px){
-                                background-color: transparent;
-                                line-height: 27px;
-                            }
-                        }
-                    }
-                    p{
-                        span{
-                            background-color: white;
-                            padding: 5px 10px;
-                        }
-                        @media only screen and (max-width: 354px){
-                            background: white;
+                            background-color: transparent;
+                            line-height: 27px;
                         }
                     }
                 }
-
+                p span{
+                  background-color: #ffffff;
+                  padding: 5px 10px;
+                }
+                @media only screen and (max-width: 354px){
+                  p{
+                    background: #ffffff;
+                  }
+                }
             }
         }
+
         .promo-slider__item-active{
             display: block;
         }
@@ -425,7 +423,7 @@ li {
     text-align: center;
 
     .reviews__title{
-        color: white;
+        color: #ffffff;
         font-family: @font-family-pt-serif-caption;
         font-size: 30px;
         margin-bottom: 50px;
@@ -445,13 +443,13 @@ li {
                         margin-right: 0;
                     }
                     .reviews__item-header{
-                        background: white;
+                        background: #ffffff;
                         padding: 1px;
                         height: 120px;
                         .reviews__item-img{
                             margin-top: -20px;
                             img{
-                                border: 1px solid white;
+                                border: 1px solid #ffffff;
                             }
                         }
                         .reviews__item-name{
@@ -471,7 +469,7 @@ li {
                     blockquote{
                         margin: 0;
                         padding: 5px 40px 0 40px;
-                        background: white;
+                        background: #ffffff;
                         height: 160px;
                         @media only screen and (max-width: 980px){
                             height: 210px;
@@ -547,7 +545,7 @@ li {
                 width: 348px;
                 height: 117px;
                 opacity: 0.95;
-                background-color: white;
+                background-color: #ffffff;
                 padding: 18px 20px;
                 box-sizing: border-box;
                 color: @color-base;
@@ -628,7 +626,7 @@ li {
     text-align: center;
     .recommendations__inner{
         .recommendations__title{
-            color: white;
+            color: #ffffff;
             font-family: @font-family-pt-serif-caption;
             font-size: 30px;
             padding-bottom: 34px;
@@ -636,7 +634,7 @@ li {
         .recommendations__list{
             .recommendations__item{
                 vertical-align: top;
-                background: white;
+                background: #ffffff;
                 margin-right: 20px;
                 @media only screen and (max-width: 980px){
                     background: transparent;
@@ -649,7 +647,7 @@ li {
                     }
                     .recommendations__item-img{
 
-                        background: white;
+                        background: #ffffff;
                         img{
                             margin-left: -15px;
                             width: 100%;
@@ -660,7 +658,7 @@ li {
                         }
                     }
                     .brief-info{
-                        background: white;
+                        background: #ffffff;
                     }
                 }
                 &:first-child{
@@ -704,7 +702,7 @@ li {
                               min-width: 20px;
                               height: 20px;
                               min-height: 20px;
-                              background: rgba(1, 0, 0, 0.05);//bcs on the white bg - we can't to see zoom btn - to designer
+                              background: rgba(1, 0, 0, 0.05);//bcs on the #ffffff bg - we can't to see zoom btn - to designer
                           }
                       }
                     }
@@ -951,7 +949,7 @@ li {
               line-height: 19px;
             }
             .date-of-rest__choice.choice-block{
-              background-color: white;
+              background-color: #ffffff;
               border: 1px solid @border-color;
                 .choice-block__item{
                     label{
@@ -968,7 +966,7 @@ li {
                       /* Style for "Left & Right c" */
                       width: 40px;
                       height: 27px;
-                      background-color: white;
+                      background-color: #ffffff;
                       border: 1px solid @border-color;
                     }
                 }
