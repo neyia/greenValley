@@ -1509,7 +1509,7 @@ li {
 /*Home via avocode*/
 /* Style for "Header" */
 .page-header {
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0.5px 0.9px 0 #ebebeb;
   width: 100%;
   margin: 0 auto;
@@ -1535,46 +1535,42 @@ li {
   padding: 18px 0;
   min-height: 14px;
 }
-.page-header .page-header__inner .page-header__main-nav .main-nav .main-nav__list {
-  display: block;
-  font-size: 0;
-  list-style: none;
-  padding: 0;
-}
-.page-header .page-header__inner .page-header__main-nav .main-nav .main-nav__list .main-nav__item {
+.page-header .page-header__inner .page-header__main-nav .main-nav__item {
   display: inline-block;
-  font-size: 14px;
   text-transform: uppercase;
   vertical-align: middle;
   margin-left: 10px;
+  font-size: 14px;
   line-height: 22px;
+  font-weight: 400;
 }
-.page-header .page-header__inner .page-header__main-nav .main-nav .main-nav__list .main-nav__item .main-nav__link {
+.page-header .page-header__inner .page-header__main-nav .main-nav__item .main-nav__link {
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
 }
-.page-header .page-header__inner .page-header__main-nav .main-nav .main-nav__list .main-nav__item .main-nav__link:hover {
+.page-header .page-header__inner .page-header__main-nav .main-nav__item .main-nav__link:hover {
   color: #ff7435;
 }
-.page-header .page-header__inner .page-header__main-nav .main-nav .main-nav__list .main-nav__item .main-nav__link--active {
+.page-header .page-header__inner .page-header__main-nav .main-nav__item .main-nav__link--active {
   color: #ff7435;
   font-weight: 400;
 }
 .page-header .page-header__inner .page-header__contacts {
   color: #191919;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
   padding: 5px 0 5px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }
 .page-header .page-header__inner .page-header__contacts .page-header__phone {
   display: block;
   font-family: "PT Sans Caption Bold";
   color: #191919;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
-  text-transform: uppercase;
+  font-weight: 400;
 }
 .page-header .page-header__inner .page-header__btn {
   padding: 5px 0;
@@ -1797,7 +1793,7 @@ li {
   width: 100%;
   background: #0c83e7;
   margin: 5px;
-  color: #FFF;
+  color: #ffffff;
   border-radius: 3px;
   text-align: center;
 }
@@ -1810,7 +1806,7 @@ li {
   width: 100%;
   background: #C9C9C9;
   margin: 5px;
-  color: #FFF;
+  color: #ffffff;
   border-radius: 3px;
   text-align: center;
   cursor: pointer;
@@ -1915,8 +1911,8 @@ li {
   padding: 0;
   transform: rotate(-45deg);
   border: 0 solid transparent;
-  border-left: 2px solid #fff;
-  border-top: 2px solid #fff;
+  border-left: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
   border-radius: 0;
   -khtml-border-radius: 0;
   -o-border-radius: 0;
@@ -1936,8 +1932,8 @@ li {
   right: -30px;
   padding: 0;
   transform: rotate(135deg);
-  border-left: 2px solid #fff;
-  border-top: 2px solid #fff;
+  border-left: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
   border-radius: 0;
   -khtml-border-radius: 0;
   -o-border-radius: 0;
@@ -2182,7 +2178,7 @@ li {
   background: url('../img/room_list/slider.jpg') 50% 50%;
   background-size: cover;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   padding: 40px 0;
 }
 .rooms .rooms__header .rooms__header-title {

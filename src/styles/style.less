@@ -66,13 +66,11 @@ li {
 
 /* Style for "Header" */
 .page-header{
-
-    background-color: #fff;
-    box-shadow: 0.5px 0.9px 0 #ebebeb;
+    background-color: #ffffff;
+    box-shadow: 0.5px 0.9px 0 @border-color;
     width: 100%;
     margin: 0 auto;
     padding: 0;
-
     .clearfix();
 
     .page-header__inner{
@@ -88,56 +86,43 @@ li {
             padding: 18px 0;
             min-height: 14px;
 
-            .main-nav{
-                .main-nav__list{
-                    display: block;
-                    font-size: 0;
-                    list-style: none;
-                    padding: 0;
+            .main-nav__item{
+                display: inline-block;
+                text-transform: uppercase;
+                vertical-align: middle;
+                margin-left: 10px;
+                .font-styles(14px,22px,400);
 
-                    .main-nav__item{
-                        display: inline-block;
-                        font-size: 14px;
-                        text-transform: uppercase;
-                        vertical-align: middle;
-                        margin-left: 10px;
-                        line-height: 22px;
-                        .main-nav__link{
-                            font-weight: 500;
-                            line-height: normal;
-                            text-transform: uppercase;
-                            &:hover {
-                                color: @color-warning;
-                            }
-                        }
-                        .main-nav__link--active{
-                            color: @color-warning;
-                            font-weight: 400;
-                        }
+                .main-nav__link{
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: @color-warning;
                     }
                 }
+                .main-nav__link--active{
+                    color: @color-warning;
+                    font-weight: 400;
+                }
             }
+
         }
 
         .page-header__contacts{
             color: @color-base;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
             padding: 5px 0 5px 20px;
+            .font-styles(14px,18px,400);
 
             .page-header__phone{
                 display: block;
                 font-family: @font-family-pt-sans-caption-bold;
                 color: @color-base;
-                font-size: 18px;
-                line-height: 30px;
                 text-transform: uppercase;
-
+                .font-styles(18px,30px,400);
             }
-
-
         }
+
         .page-header__btn{
             padding: 5px 0;
             text-align: right;
@@ -357,7 +342,7 @@ li {
       width: 100%;
       background: #0c83e7;
       margin: 5px;
-      color: #FFF;
+      color: #ffffff;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px;
@@ -376,7 +361,7 @@ li {
                     width: 100%;
                     background: #C9C9C9;
                     margin: 5px;
-                    color: #FFF;
+                    color: #ffffff;
                     -webkit-border-radius: 3px;
                     -moz-border-radius: 3px;
                     border-radius: 3px;
@@ -518,8 +503,8 @@ li {
                 -ms-transform: rotate(-45deg);
                 transform: rotate(-45deg);
                 border: 0 solid transparent;
-                border-left: 2px solid #fff;
-                border-top: 2px solid #fff;
+                border-left: 2px solid #ffffff;
+                border-top: 2px solid #ffffff;
                 .border-radius(0);
             }
             .next{
@@ -533,8 +518,8 @@ li {
                 -webkit-transform: rotate(135deg);
                 -ms-transform: rotate(135deg);
                 transform: rotate(135deg);
-                border-left: 2px solid #fff;
-                border-top: 2px solid #fff;
+                border-left: 2px solid #ffffff;
+                border-top: 2px solid #ffffff;
                 .border-radius(0);
             }
         }
@@ -789,7 +774,7 @@ li {
 
 .page-footer {
     width: 100%;
-    box-shadow: 0 -1px 0 #ebebeb;
+    box-shadow: 0 -1px 0 @border-color;
     overflow: hidden;
     .page-footer__inner {
         padding: 25px 0;
@@ -837,7 +822,7 @@ li {
         background: url('../img/room_list/slider.jpg') 50% 50%;
         background-size: cover;
         text-align: center;
-        color: #fff;
+        color: #ffffff;
         padding: 40px 0;
         .rooms__header-title{
             font-size: 36px;
@@ -862,7 +847,7 @@ li {
             .room-categories__list{
                 .room-categories__item{
                     margin-bottom: 20px;
-                    border: 1px solid #ebebeb;
+                    border: 1px solid @border-color;
                     background-color: #fafafa;
                     .room-categories__item-text{
 
@@ -967,7 +952,7 @@ li {
             }
             .date-of-rest__choice.choice-block{
               background-color: white;
-              border: 1px solid #ebebeb;
+              border: 1px solid @border-color;
                 .choice-block__item{
                     label{
                       width: 92px;
@@ -984,7 +969,7 @@ li {
                       width: 40px;
                       height: 27px;
                       background-color: white;
-                      border: 1px solid #ebebeb;
+                      border: 1px solid @border-color;
                     }
                 }
             }
