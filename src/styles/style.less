@@ -577,122 +577,108 @@ li {
     background: url("../img/home/off_bg.png") no-repeat;
     background-size: cover;
     text-align: center;
-    .recommendations__inner{
-        .recommendations__title{
-            color: #ffffff;
-            font-family: @font-family-pt-serif-caption;
-            font-size: 30px;
-            padding-bottom: 34px;
-        }
-        .recommendations__list{
-            .recommendations__item{
-                vertical-align: top;
-                background: #ffffff;
-                margin-right: 20px;
-                @media only screen and (max-width: 980px){
-                    background: transparent;
-                    margin-right: 0;
-                }
-                .recommendations__item-content{
-                    display: block;
-                    @media only screen and (max-width: 980px){
-                        overflow: hidden;
-                    }
-                    .recommendations__item-img{
 
-                        background: #ffffff;
-                        img{
-                            margin-left: -15px;
-                            width: 100%;
-                            min-width: 390px;
-                            @media only screen and (max-width: 354px){
-                                min-width: 280px;
-                            }
-                        }
+    .recommendations__title{
+        color: #ffffff;
+        font-family: @font-family-pt-serif-caption;
+        font-size: 30px;
+        padding-bottom: 34px;
+    }
+
+    .recommendations__item{
+        vertical-align: top;
+        background: #ffffff;
+        margin-right: 20px;
+
+        @media only screen and (max-width: 980px){
+            background: transparent;
+            margin-right: 0;
+        }
+
+        .recommendations__item-content{
+            display: block;
+            @media only screen and (max-width: 980px){
+                overflow: hidden;
+            }
+            .recommendations__item-img{
+                background: #ffffff;
+
+                img{
+                    margin-left: -15px;
+                    width: 100%;
+                    min-width: 390px;
+                    @media only screen and (max-width: 354px){
+                        min-width: 280px;
                     }
-                    .brief-info{
-                        background: #ffffff;
-                    }
-                }
-                &:first-child{
-                    //margin: 0;
                 }
             }
+            .brief-info{
+                background: #ffffff;
+            }
         }
-        .recommendations__list--center{}
     }
+
 }
 
 /* Single room via avocode*/
 /* Style for "About room" */
 .about-room{
-    .about-room__inner{
-        .about-room__header{
-            .brief-info__title--big{}
+    .about-room__slider .owl-item li img,
+    .about-room__slider .owl-item li{
+        @media only screen and (max-width: 980px){
+          width: 100%;
         }
-        .about-room__information{
-            .about-room__slider{
-                .owl-item li img,
-                .owl-item li{
-                  @media only screen and (max-width: 980px){
-                    width: 100%;
-                  }
+    }
 
-                }
-                .about-room__slider-wrapper{
-                    .about-room__slide-img{
-                      img{
-                          width: 100%;
-                          min-width: 560px;
-                          height: auto;
-                          min-height: 397px;
-                      }
-                      span{
-                          right: 20px;
-                          top: 20px;
-                          img{
-                              width: 20px;
-                              min-width: 20px;
-                              height: 20px;
-                              min-height: 20px;
-                              background: rgba(1, 0, 0, 0.05);//bcs on the #ffffff bg - we can't to see zoom btn - to designer
-                          }
-                      }
-                    }
-                }
+    .about-room__slide-img {
+        img {
+            width: 100%;
+            min-width: 560px;
+            height: auto;
+            min-height: 397px;
+        }
+        span {
+            right: 20px;
+            top: 20px;
+            img {
+              width: 20px;
+              min-width: 20px;
+              height: 20px;
+              min-height: 20px;
+              background: rgba(1, 0, 0, 0.05); //bcs on the #ffffff bg - we can't to see zoom btn - to designer
             }
-            .about-room__wrapper{
-                .room-description{
-                    font-size: 16px;
-                    line-height: 22px;
-                    font-family: @font-family-fira-sans;
+        }
+    }
 
-                    .room-description__title{
-                        font-size: 26px;
-                        font-family: @font-family-pt-serif-caption;
-                        margin: 45px 0 25px 0;
-                        &:first-child{
-                            margin: 0 0 25px 0;
-                        }
-                    }
+    .room-description{
+        font-family: @font-family-fira-sans;
+        .font-styles(16px,22px,400);
 
-                }
-                .room-description__list-of-features{
-                    margin-bottom: 10px;
-                    .room-description__item{
-                        vertical-align: top;
-                        margin-right: 20px;
-                        ul .room-description__feature{
-                            display: block;
-                            b{
-                                color: @color-warning;
-                            }
-                        }
-                    }
+        .room-description__title{
+            font-size: 26px;
+            font-family: @font-family-pt-serif-caption;
+            margin: 45px 0 25px 0;
+            &:first-child{
+                margin: 0 0 25px 0;
+            }
+        }
+
+    }
+
+    .room-description__list-of-features{
+        margin-bottom: 10px;
+        .room-description__item{
+            vertical-align: top;
+            margin-right: 20px;
+            ul .room-description__feature{
+                display: block;
+                b{
+                    color: @color-warning;
                 }
             }
         }
     }
+
 }
 
 /* Style for "recommendations--gray-bg" */
