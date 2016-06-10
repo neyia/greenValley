@@ -20,14 +20,14 @@
             <div class="row">
                 <p class="date-of-rest__step step">шаг 1</p>
                 <h1 class="date-of-rest__title">Дата отдыха</h1>
-                <ul class="date-of-rest__choice choice-block col-md-4 col-md-offset-4">
-                    <li class="date-of-rest__depart choice-block__item">
+                <ul class="date-of-rest__choice choice-block col-md-4 col-md-offset-4 clearfix">
+                    <li class="date-of-rest__depart choice-block__item col-xs-12 col-md-5">
                         <label for="dayOfDepart">дата въезда</label><br/>
                         <input type="text" name="dayOfDepart" maxlength="2" id="dayOfDepart" placeholder="дд">
                         <input type="text" name="monthOfDepart" maxlength="2" placeholder="мм">
                         <input type="text" name="yearOfDepart" maxlength="4" placeholder="гггг">
                     </li>
-                    <li class="date-of-rest__return choice-block__item">
+                    <li class="date-of-rest__return choice-block__item col-xs-12 col-md-5">
                         <label for="dayOfReturn">дата выезда</label><br/>
                         <input type="text" name="dayOfReturn" maxlength="2" id="dayOfReturn" placeholder="дд">
                         <input type="text" name="monthOfReturn" maxlength="2" placeholder="мм">
@@ -43,15 +43,15 @@
             <div class="row">
                 <p class="place-for-living__step step">шаг 2</p>
                 <h2 class="place-for-living__title">Место проживания</h2>
-                <ul class="place-for-living__list choice-block col-md-4 col-md-offset-4">
-                <li class="place-for-living__item choice-block__item">
+                <ul class="place-for-living__list choice-block col-md-4 col-md-offset-4 clearfix">
+                <li class="place-for-living__item choice-block__item col-xs-12 col-md-5">
                     <label for="hotel">
                         <input type="radio" checked name="placeForLiving" id="hotel">
                         <span class="place-for-living__item--text">отель</span>
                         <img src="img/form/hotel.svg" alt="s" />
                     </label>
                 </li>
-                <li class="place-for-living__item choice-block__item">
+                <li class="place-for-living__item choice-block__item col-xs-12 col-md-5">
                     <label for="cottage">
                         <input type="radio" name="placeForLiving" id="cottage">
                         <span class="place-for-living__item--text">коттедж</span>
@@ -69,65 +69,33 @@
                 <p class="type-of-cottage__step step">шаг 3</p>
                 <h2 class="type-of-cottage__title">Тип коттеджа</h2>
                 <div class="type-of-cottage__list-wrapper col-md-8 col-md-offset-2">
-                <ul class="type-of-cottage__list choice-block ">
-                    <li class="type-of-cottage__item choice-block__item">
+                <ul class="type-of-cottage__list choice-block col-md-12 clearfix">
+                    <li class="type-of-cottage__item choice-block__item col-xs-12 col-md-2">
                         <label for="cottage1">
                             <input type="radio" id="cottage1" name="typeOfCottage">
                             <span class="type-of-cottage__item-text choice-block__item-text">флагман</span>
+                            <img src="img/form/hotel_bathtub.svg" alt="c"/>
                         </label>
-                        <span class="type-of-cottage__item-features-wrapper">
-                            <ul class="type-of-cottage__item-features">
-                                <li class="type-of-cottage__item-feature">площадь 100м<sup>2</sup></li>
-                                <li class="type-of-cottage__item-feature">3 комнаты</li>
-                                <li class="type-of-cottage__item-feature">5 спальных мест</li>
-                                <li class="type-of-cottage__item-feature">раздельный санузел</li>
-                                <li class="type-of-cottage__item-feature">wi-fi</li>
-                            </ul>
-                        </span>
                     </li>
-                    <li class="type-of-cottage__item choice-block__item">
+                    <li class="type-of-cottage__item choice-block__item col-xs-12 col-md-2">
                         <label for="cottage2">
                             <input type="radio" id="cottage2" name="typeOfCottage">
-                            <span class="type-of-cottage__item-text choice-block__item-text">озерный</span>
-                            <span class="type-of-cottage__item-features-wrapper">
-                                <ul class="type-of-cottage__item-features">
-                                    <li class="type-of-cottage__item-feature">площадь 220м<sup>2</sup></li>
-                                    <li class="type-of-cottage__item-feature">6 комнат</li>
-                                    <li class="type-of-cottage__item-feature">7 спальных мест</li>
-                                    <li class="type-of-cottage__item-feature"> 2 раздельных санузла</li>
-                                    <li class="type-of-cottage__item-feature">wi-fi</li>
-                                </ul>
-                            </span>
+                            <span class="type-of-cottage__item-text choice-block__item-text">флагман</span>
+                            <img src="img/form/hotel_bathtub.svg" alt="c"/>
                         </label>
                     </li>
-                    <li class="type-of-cottage__item choice-block__item">
+                    <li class="type-of-cottage__item choice-block__item col-xs-12 col-md-2">
                         <label for="cottage3">
                             <input type="radio" id="cottage3" name="typeOfCottage">
-                            <span class="type-of-cottage__item-text choice-block__item-text">портовый</span>
-                            <span class="type-of-cottage__item-features-wrapper">
-                                <ul class="type-of-cottage__item-features">
-                                    <li class="type-of-cottage__item-feature">площадь 50м<sup>2</sup></li>
-                                    <li class="type-of-cottage__item-feature">2 комнаты</li>
-                                    <li class="type-of-cottage__item-feature">3 спальных места</li>
-                                    <li class="type-of-cottage__item-feature">совмещенный санузел</li>
-                                    <li class="type-of-cottage__item-feature">wi-fi</li>
-                                </ul>
-                            </span>
+                            <span class="type-of-cottage__item-text choice-block__item-text">флагман</span>
+                            <img src="img/form/hotel_bathtub.svg" alt="c"/>
                         </label>
                     </li>
-                    <li class="type-of-cottage__item choice-block__item">
+                    <li class="type-of-cottage__item choice-block__item col-xs-12 col-md-2">
                         <label for="cottage4">
                             <input type="radio" id="cottage4" name="typeOfCottage">
-                            <span class="type-of-cottage__item-text choice-block__item-text">ольховка</span>
-                            <span class="type-of-cottage__item-features-wrapper">
-                                <ul class="type-of-cottage__item-features">
-                                    <li class="type-of-cottage__item-feature">площадь 150м<sup>2</sup></li>
-                                    <li class="type-of-cottage__item-feature">4 комнаты</li>
-                                    <li class="type-of-cottage__item-feature">5 спальных мест</li>
-                                    <li class="type-of-cottage__item-feature">раздельный санузел</li>
-                                    <li class="type-of-cottage__item-feature">wi-fi</li>
-                                </ul>
-                            </span>
+                            <span class="type-of-cottage__item-text choice-block__item-text">флагман</span>
+                            <img src="img/form/hotel_bathtub.svg" alt="c"/>
                         </label>
                     </li>
                 </ul>
@@ -137,103 +105,41 @@
     </section>
 
     <section class="personal-data">
-        <div class="personal-data__wrapper">
-            <p class="personal-data__step step">шаг 4</p>
-            <h2 class="personal-data__title">Персональная информация</h2>
-            <div class="personal-data__form">
-                <div class="personal-data__input-wrapper">
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <input type="text" name="firstName" placeholder="имя" id="firstName">
-                    <span class="personal-data__success"></span>
-                    <span class="personal-data__error"><span></span><span></span></span>
-                </div>
+        <div class="personal-data__inner container">
+            <div class="row">
+                <p class="personal-data__step step">шаг 4</p>
+                <h2 class="personal-data__title">Персональная информация</h2>
+                <div class="personal-data__form col-xs-12 col-md-6 col-md-offset-3 clearfix">
+                    <div class="personal-data__input-wrapper col-md-6">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <input type="text" name="firstName" placeholder="имя" id="firstName">
 
-                <div class="personal-data__input-wrapper">
-                    <input type="text" name="lastName" placeholder="фамилия" id="lastName">
-                    <span class="personal-data__success"></span>
-                    <span class="personal-data__error"><span></span><span></span></span>
-                </div>
+                    </div>
 
-                <div class="personal-data__input-wrapper">
-                    <input type="number" name="phoneNumber" id="phoneNumber" placeholder="номер телефона">
-                    <span class="personal-data__success"></span>
-                    <span class="personal-data__error"><span></span><span></span></span>
-                    <label for="phoneNumber">Мы свяжемся с вами в случае необходимости.</label>
-                </div>
+                    <div class="personal-data__input-wrapper col-md-6">
+                        <input type="text" name="lastName" placeholder="фамилия" id="lastName">
+                    </div>
 
-                <div class="personal-data__input-wrapper">
-                    <input type="email" name="email" id="email" placeholder="e-mail">
-                    <span class="personal-data__success"></span>
-                    <span class="personal-data__error"><span></span><span></span></span>
-                    <label for="email">На этот адрес мы вышлем вам подтверждение о забронированном номере.</label>
+                    <div class="personal-data__input-wrapper col-md-6">
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="номер телефона">
+                     </div>
+
+                    <div class="personal-data__input-wrapper col-md-6 err">
+                        <input type="email" name="email" id="email" placeholder="e-mail">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="payment">
-        <div class="payment__wrapper">
-            <p class="payment__step step">шаг 5</p>
-            <h3 class="payment__title">Способ оплаты</h3>
-            <div class="payment__form-wrapper">
-                <div class="payment__form ">
-                    <div class="type-of-payment">
-                        <div class="payment-on-place">
-                            <div class="payment-on-place__explanation">
-                                <label for="1">
-                                    <input type="radio" id="1" name="type-of-payment">
-                                    <span class="payment-on-place__choose">по приезду</span>
-                                </label>
-                                <p class="payment-on-place__hint">Вы можете произвести оплату по факту заселения.</p>
-                            </div>
-                        </div>
-
-                        <div class="payment-now">
-                            <div class="payment-now__explanation">
-                                <label for="2">
-                                    <input type="radio" id="2" checked name="type-of-payment">
-                                    <span class="payment-now__choose">сейчас</span>
-                                </label>
-                                <p class="payment-now__hint">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
-                            </div>
-                            <div class="payment-now__form">
-                                <div class="payment-now__col1">
-                                    <label for="cardNumber">номер карты</label>
-                                        <input type="text" name="cardNumber" id="cardNumber" placeholder="0000 0000 0000 0000">
-                                        <span class="personal-data__success"></span>
-                                        <span class="personal-data__error"><span></span><span></span></span>
-                                        <label for="ownerLastName">фамилия владельца карты</label>
-                                        <input type="text" name="ownerLastName" id="ownerLastName" placeholder="vladimir">
-                                        <span class="personal-data__success"></span>
-                                        <span class="personal-data__error"><span></span><span></span></span>
-                                </div>
-                                <div class="payment-now__col2">
-                                    <label for="cvv">код cvv <i class="fa fa-question-circle"></i></label>
-                                    <input type="text" name="cvv" id="cvv" placeholder="123">
-                                    <span class="personal-data__success"></span>
-                                    <span class="personal-data__error"><span></span><span></span></span>
-                                    <label for="valid_T">действует до</label>
-                                    <input type="text" name="valid_T" id="valid_T" placeholder="01/2018">
-                                    <span class="personal-data__success"></span>
-                                    <span class="personal-data__error"><span></span><span></span></span>
-                                </div>
-                            </div>
-                        </div>
+        <div class="payment__inner container">
+            <div class="row">
+                <p class="payment__step step">шаг 5</p>
+                <h3 class="payment__title">Забронировать</h3>
+                <div class="payment__btn text-center">
+                    <input type="button" value="забронировать" class="btn btn--blue " id="submit">
                 </div>
-
-                <div class="sum-for-payment">
-                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                    <p class="sum-for-payment__title">к оплате</p>
-                    <p class="sum-for-payment__sum"></p>
-                    <p class="sum-for-payment__warning"></p>
-                </div>
-            </div>
-
-            <div class="payment__btn">
-                <input type="button" value="забронировать" class="btn btn--blue" id="submit">
-            </div>
-
             </div>
         </div>
     </section>

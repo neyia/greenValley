@@ -1278,6 +1278,31 @@ input[type="checkbox"]:checked + label:before {
   background: transparent;
   color: #ffffff;
 }
+.btn--blue {
+  background-color: #0ab89d;
+  border: 2px solid #0ab89d;
+  border-radius: 0;
+}
+.btn--blue:hover {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #0ab89d;
+}
+.btn--blue:visited {
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
+.btn--blue:visited:hover {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #0ab89d;
+}
+.btn--blue:active {
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
 .fancybox-close {
   top: 21px;
   right: 21px;
@@ -2252,6 +2277,9 @@ li {
   }
 }
 /* Forms via avocode*/
+.main-form {
+  overflow: hidden;
+}
 .main-form .booking .booking__inner {
   padding: 50px 0;
 }
@@ -2268,6 +2296,11 @@ li {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+}
+@media only screen and (max-width: 400px) {
+  .main-form .booking .booking__inner .booking__information {
+    margin: 0 20px;
+  }
 }
 .main-form .booking .booking__inner .booking__information .booking__phone-number {
   color: #ff7435;
@@ -2292,17 +2325,28 @@ li {
   text-align: center;
   color: #191919;
   font-family: "PT Serif Caption Regular";
+  margin-bottom: 20px;
   font-size: 26px;
-  line-height: 19px;
+  line-height: 30px;
   font-weight: 400;
 }
 .main-form .date-of-rest .date-of-rest__inner .date-of-rest__choice.choice-block {
+  padding: 28px 10px;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
+}
+.main-form .date-of-rest .date-of-rest__inner .date-of-rest__choice.choice-block .choice-block__item {
+  text-align: center;
+  box-sizing: content-box;
+  margin-bottom: 10px;
+}
+.main-form .date-of-rest .date-of-rest__inner .date-of-rest__choice.choice-block .choice-block__item:first-child {
+  border-right: 1px solid #ebebeb;
 }
 .main-form .date-of-rest .date-of-rest__inner .date-of-rest__choice.choice-block .choice-block__item label {
   font-family: "Fira Sans";
   text-transform: uppercase;
+  color: #4c4c4c;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -2313,9 +2357,42 @@ li {
   height: 27px;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
+  padding: 0 5px 0;
+  margin: 5px 0 0 0;
+  color: #0ab89d;
 }
 .main-form .place-for-living .place-for-living__inner {
   padding: 50px 0;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__list {
+  border: 1px solid #ebebeb;
+  padding: 28px 10px;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__list li {
+  text-align: center;
+  box-sizing: content-box;
+  margin-bottom: 10px;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__list li label {
+  cursor: pointer;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__list li input[type="radio"] {
+  display: none;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__list li .place-for-living__item--text {
+  display: block;
+  color: #4c4c4c;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__list li input[type="radio"]:checked + .place-for-living__item--text {
+  color: #ff7435;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__list li:first-child {
+  border-right: 1px solid #ebebeb;
 }
 .main-form .place-for-living .place-for-living__inner .place-for-living__step {
   color: #929292;
@@ -2329,10 +2406,14 @@ li {
 .main-form .place-for-living .place-for-living__inner .place-for-living__title {
   text-align: center;
   color: #191919;
+  margin-bottom: 20px;
   font-family: "PT Serif Caption Regular";
   font-size: 26px;
   line-height: 19px;
   font-weight: 400;
+}
+.main-form .type-of-cottage {
+  background-color: #f1f1f1;
 }
 .main-form .type-of-cottage .type-of-cottage__inner {
   padding: 50px 0;
@@ -2351,6 +2432,113 @@ li {
   color: #191919;
   font-family: "PT Serif Caption Regular";
   font-size: 26px;
-  line-height: 19px;
+  line-height: 30px;
   font-weight: 400;
+  margin-bottom: 20px;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block {
+  border: 1px solid #ebebeb;
+  background: #ffffff;
+  padding: 28px 0;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item {
+  text-align: center;
+  box-sizing: content-box;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  border-left: 1px solid #ebebeb;
+}
+@media only screen and (max-width: 900px) {
+  .main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item {
+    margin-left: 0;
+  }
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item label {
+  cursor: pointer;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item input[type="radio"] {
+  display: none;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-text {
+  display: block;
+  color: #4c4c4c;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item input[type="radio"]:checked + .type-of-cottage__item-text {
+  color: #ff7435;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item:first-child {
+  border-left: none;
+}
+.main-form .personal-data .personal-data__inner {
+  padding: 50px 0;
+}
+.main-form .personal-data .personal-data__inner .personal-data__step {
+  color: #929292;
+  font-family: "Fira Sans";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.main-form .personal-data .personal-data__inner .personal-data__title {
+  text-align: center;
+  color: #191919;
+  font-family: "PT Serif Caption Regular";
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.main-form .personal-data .personal-data__inner .personal-data__form .personal-data__input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+.main-form .personal-data .personal-data__inner .personal-data__form .personal-data__input-wrapper .fa.fa-check {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 30px;
+  color: #0ab89d;
+  font-size: 24px;
+}
+.main-form .personal-data .personal-data__inner .personal-data__form .personal-data__input-wrapper input {
+  height: 50px;
+  width: 100%;
+  padding-left: 37px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
+.main-form .personal-data .personal-data__inner .personal-data__form .err input {
+  border: 1px solid #fa3d14;
+}
+.main-form .payment {
+  background-color: #f1f1f1;
+}
+.main-form .payment .payment__inner {
+  padding: 50px 0;
+}
+.main-form .payment .payment__inner .payment__step {
+  color: #929292;
+  font-family: "Fira Sans";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.main-form .payment .payment__inner .payment__title {
+  text-align: center;
+  color: #191919;
+  font-family: "PT Serif Caption Regular";
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
