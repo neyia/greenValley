@@ -684,28 +684,14 @@ li {
 /* Style for "recommendations--gray-bg" */
 .recommendations--gray-bg{
     background: #f6f6f6;
-    .recommendations__inner{
-        .recommendations__title{
 
+    .recommendations__item{
+        background: transparent;
+        margin: 0;
+        .recommendations__item-content{
+            display: block;
+            overflow: hidden;
         }
-        .recommendations__list{
-            .recommendations__item{
-                background: transparent;
-                margin: 0;
-                .recommendations__item-content{
-                    display: block;
-                    overflow: hidden;
-                    .recommendations__item-img{
-
-                    }
-                    .brief-info{
-                        .brief-info__title{}
-                        .brief-info__sum{}
-                    }
-                }
-            }
-        }
-        .recommendations__list--center{}
     }
 }
 
@@ -713,42 +699,32 @@ li {
     width: 100%;
     box-shadow: 0 -1px 0 @border-color;
     overflow: hidden;
+
     .page-footer__inner {
         padding: 25px 0;
     }
+
     .page-footer__address {
         color: @color-base;
         font-family: @font-family-fira-sans;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
+        .font-styles(14px,18px,400);
     }
 
-    .page-footer__fast-contacts {
-        a {
-            color: @color-base;
-            font-family: @font-family-fira-sans;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
+    .page-footer__fast-contacts a {
+        color: @color-base;
+        font-family: @font-family-fira-sans;
+        .font-styles(14px,18px,400);
 
-            &:hover {
-                color: @color-warning;
-            }
+        &:hover {
+            color: @color-warning;
         }
     }
-    .social-links li{
-        a i{
-            height: 20px;
-            color: #0ab89d;
-            font-size: 23px;
-            font-weight: 400;
-            line-height: 18px;
-            margin-left: 15px;
-        }
-        &:first-child{
-            margin: 0;
-        }
+
+    .social-links li a i{
+        height: 20px;
+        color: #0ab89d;
+        margin-left: 15px;
+        .font-styles(23px,18px,400);
     }
 }
 
@@ -761,76 +737,58 @@ li {
         text-align: center;
         color: #ffffff;
         padding: 40px 0;
+
         .rooms__header-title{
-            font-size: 36px;
-            line-height: 42px;
             font-family: @font-family-pt-serif-caption;
             font-weight: normal;
             margin-bottom: 30px;
+            .font-styles(36px,42px,400);
         }
-        .rooms__header-text{}
     }
-    .room-categories{
-        .room-categories__title{
-            font-size: 36px;
-            line-height: 42px;
-            font-family: @font-family-pt-serif-caption;
-            font-weight: normal;
-            margin: 30px 0;
-            text-align: center;
+
+    .room-categories__title{
+        font-family: @font-family-pt-serif-caption;
+        font-weight: normal;
+        margin: 30px 0;
+        text-align: center;
+        .font-styles(36px,42px,400);
+    }
+
+    .room-categories__item{
+        margin-bottom: 20px;
+        border: 1px solid @border-color;
+        background-color: #fafafa;
+
+        .room-categories__img img{
+            width: 100%;
         }
-        .room-categories__inner{
+        .room-categories__buttons{
+            margin-top: 20px;
 
-            .room-categories__list{
-                .room-categories__item{
-                    margin-bottom: 20px;
-                    border: 1px solid @border-color;
-                    background-color: #fafafa;
-                    .room-categories__item-text{
+            .room-categories__btn{
+                @media only screen and (max-width: 600px){
+                    display: block;
+                    float: none;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
 
-                        .brief-info{
-
-                            .brief-info__title{
-
-
-                            }
-                            .brief-info__sum{
-
-                            }
-                        }
-                    }
-                    .room-categories__img{
-                        img{
-                            width: 100%;
-                        }
-                    }
-                    .room-categories__buttons{
-                        margin-top: 20px;
-                        .room-categories__btn{
-                            @media only screen and (max-width: 600px){
-                                display: block;
-                                float: none;
-                                text-align: center;
-                                margin-top: 20px;
-                            }
-                        }
-                        .room-categories__more{
-                            background: transparent;
-                            color: #333333;
-                            padding: 10px 5px;
-                            text-align: center;
-                            @media only screen and (max-width: 600px){
-                                display: block;
-                                float: none;
-                                text-align: center;
-                                margin-top: 20px;
-                            }
-                        }
-                    }
+            .room-categories__more{
+                background: transparent;
+                color: #333333;
+                padding: 10px 5px;
+                text-align: center;
+                @media only screen and (max-width: 600px){
+                    display: block;
+                    float: none;
+                    text-align: center;
+                    margin-top: 20px;
                 }
             }
         }
     }
+
 }
 
 /* Forms via avocode*/
