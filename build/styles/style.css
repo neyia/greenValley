@@ -1168,7 +1168,7 @@ input[type="checkbox"]:checked + label:before {
 }
 */
 .link {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   color: #191919;
   text-transform: uppercase;
   cursor: pointer;
@@ -1212,7 +1212,7 @@ input[type="checkbox"]:checked + label:before {
 .btn {
   display: inline-block;
   vertical-align: middle;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -1261,7 +1261,7 @@ input[type="checkbox"]:checked + label:before {
 .btn--white-border:hover {
   border: 2px solid #ffffff;
   background-color: #ffffff;
-  color: rgba(0, 128, 0, 0.42);
+  color: #0ab89d;
 }
 .btn--white-border:visited {
   border: 2px solid #ffffff;
@@ -1271,7 +1271,7 @@ input[type="checkbox"]:checked + label:before {
 .btn--white-border:visited:hover {
   border: 2px solid #ffffff;
   background-color: #ffffff;
-  color: rgba(0, 128, 0, 0.42);
+  color: #0ab89d;
 }
 .btn--white-border:active {
   border: 2px solid #ffffff;
@@ -1483,7 +1483,7 @@ input[type="checkbox"]:checked + label:before {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
 }
 h1,
 h2,
@@ -1513,7 +1513,7 @@ li {
 }
 .brief-info .brief-info__title {
   color: #191919;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   padding-bottom: 13px;
   font-size: 26px;
   line-height: 19px;
@@ -1521,7 +1521,7 @@ li {
 }
 .brief-info .brief-info__sum {
   color: #191919;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 24px;
@@ -1590,7 +1590,7 @@ li {
 }
 .page-header .page-header__inner .page-header__contacts .page-header__phone {
   display: block;
-  font-family: "PT Sans Caption Bold";
+  font-family: "PT Sans Caption", sans-serif;
   color: #191919;
   text-transform: uppercase;
   font-size: 18px;
@@ -1705,7 +1705,7 @@ li {
 .promo-slider .promo-slider__list .promo-slider__item .promo-slider__item-text .promo-slider__item-title {
   color: #1c1c1c;
   margin-bottom: 40px;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-size: 36px;
   line-height: 42px;
   font-weight: 400;
@@ -1759,7 +1759,7 @@ li {
   display: block;
 }
 .healthy-rest .healthy-rest__inner .healthy-rest__title {
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   color: #191919;
   text-align: center;
   margin-bottom: 35px;
@@ -1790,7 +1790,7 @@ li {
   vertical-align: top;
   margin-left: 6%;
   text-align: center;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -1894,9 +1894,10 @@ li {
 }
 .reviews .reviews__title {
   color: #ffffff;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-size: 30px;
   margin-bottom: 50px;
+  font-weight: normal;
 }
 .reviews .reviews__slider {
   position: relative;
@@ -1999,7 +2000,7 @@ li {
 }
 .shares .shares__title {
   color: #000000;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   padding-bottom: 35px;
   font-size: 30px;
 }
@@ -2016,7 +2017,7 @@ li {
   background-color: #ffffff;
   padding: 18px 20px;
   color: #191919;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -2037,7 +2038,7 @@ li {
 }
 .our-location .our-location__title {
   color: #191919;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-size: 30px;
   margin: 30px 0;
 }
@@ -2055,7 +2056,7 @@ li {
   padding-bottom: 30px;
   margin-bottom: 40px;
   color: #191919;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -2063,7 +2064,7 @@ li {
 .transport .transport__list .transport__item .transport__title {
   padding: 1px 0 5px 0;
   color: #191919;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 24px;
@@ -2081,7 +2082,7 @@ li {
 }
 .recommendations .recommendations__title {
   color: #ffffff;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-size: 30px;
   padding-bottom: 34px;
 }
@@ -2146,14 +2147,14 @@ li {
   background: rgba(1, 0, 0, 0.05);
 }
 .about-room .room-description {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
 .about-room .room-description .room-description__title {
   font-size: 26px;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   margin: 45px 0 25px 0;
 }
 .about-room .room-description .room-description__title:first-child {
@@ -2194,14 +2195,14 @@ li {
 }
 .page-footer .page-footer__address {
   color: #191919;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
 }
 .page-footer .page-footer__fast-contacts a {
   color: #191919;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -2227,7 +2228,7 @@ li {
   padding: 40px 0;
 }
 .rooms .rooms__header .rooms__header-title {
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-weight: normal;
   margin-bottom: 30px;
   font-size: 36px;
@@ -2235,7 +2236,7 @@ li {
   font-weight: 400;
 }
 .rooms .room-categories__title {
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-weight: normal;
   margin: 30px 0;
   text-align: center;
@@ -2286,12 +2287,12 @@ li {
 .main-form .booking .booking__inner .booking__title {
   text-align: center;
   color: #000000;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-size: 30px;
   margin-bottom: 26px;
 }
 .main-form .booking .booking__inner .booking__information {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   color: #000000;
   font-size: 16px;
   line-height: 20px;
@@ -2314,7 +2315,7 @@ li {
 }
 .main-form .date-of-rest .date-of-rest__inner .date-of-rest__step {
   color: #929292;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -2324,7 +2325,7 @@ li {
 .main-form .date-of-rest .date-of-rest__inner .date-of-rest__title {
   text-align: center;
   color: #191919;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   margin-bottom: 20px;
   font-size: 26px;
   line-height: 30px;
@@ -2344,7 +2345,7 @@ li {
   border-right: 1px solid #ebebeb;
 }
 .main-form .date-of-rest .date-of-rest__inner .date-of-rest__choice.choice-block .choice-block__item label {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   color: #4c4c4c;
   font-size: 14px;
@@ -2396,7 +2397,7 @@ li {
 }
 .main-form .place-for-living .place-for-living__inner .place-for-living__step {
   color: #929292;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -2407,7 +2408,7 @@ li {
   text-align: center;
   color: #191919;
   margin-bottom: 20px;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-size: 26px;
   line-height: 19px;
   font-weight: 400;
@@ -2420,7 +2421,7 @@ li {
 }
 .main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__step {
   color: #929292;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -2430,7 +2431,7 @@ li {
 .main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__title {
   text-align: center;
   color: #191919;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-size: 26px;
   line-height: 30px;
   font-weight: 400;
@@ -2479,7 +2480,7 @@ li {
 }
 .main-form .personal-data .personal-data__inner .personal-data__step {
   color: #929292;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -2489,7 +2490,7 @@ li {
 .main-form .personal-data .personal-data__inner .personal-data__title {
   text-align: center;
   color: #191919;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-size: 26px;
   line-height: 30px;
   font-weight: 400;
@@ -2526,7 +2527,7 @@ li {
 }
 .main-form .payment .payment__inner .payment__step {
   color: #929292;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -2536,7 +2537,7 @@ li {
 .main-form .payment .payment__inner .payment__title {
   text-align: center;
   color: #191919;
-  font-family: "PT Serif Caption Regular";
+  font-family: "PT Serif Caption", serif;
   font-size: 26px;
   line-height: 30px;
   font-weight: 400;
