@@ -2010,7 +2010,7 @@ li {
 .shares .shares__slide .shares__slide-information {
   text-align: left;
   position: absolute;
-  top: 50%;
+  bottom: 30px;
   width: 348px;
   height: 117px;
   opacity: 0.95;
