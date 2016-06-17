@@ -364,6 +364,9 @@ li {
         img{
             width: 100%;
             min-height: 500px;
+            @media only screen and (max-width: 770px){
+                min-height: 330px;
+            }
         }
     }
 
@@ -377,13 +380,18 @@ li {
             text-align: center;
             cursor: pointer;
             .border-radius(3px);
-
+            @media only screen and (max-width: 770px){
+                height: 60px;
+            }
             img{
                 width: 100%;
                 min-height: 200px;
                 -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
                 .transition();
+                @media only screen and (max-width: 770px){
+                    min-height: 60px;
+                }
             }
 
             &:hover img{
