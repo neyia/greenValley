@@ -173,7 +173,7 @@ li {
         top: 465px;
         position: relative;
         @media only screen and (max-width: 770px){
-            top: 365px;
+            top: 340px;
         }
         .promo-slider__pagination li{
             margin-right: 10px;
@@ -283,6 +283,9 @@ li {
             display: none;
             position: relative;
             padding-top: 5.5%;
+            @media only screen and (max-width: 770px){
+                padding-top: 3%;
+            }
         }
         .healthy-rest__slide-item-active{
             display: block;
@@ -294,6 +297,10 @@ li {
             text-align: center;
             margin-bottom: 35px;
             .font-styles(30px,32px,400);
+
+            @media only screen and (max-width: 354px){
+                margin-bottom: 20px;
+            }
         }
 
         .healthy-rest__text{
@@ -317,6 +324,10 @@ li {
                 text-align: center;
                 font-family: @font-family-fira-sans;
                 .font-styles(14px,18px,500);
+                @media only screen and (max-width: 770px){
+                    margin-left: 9%;
+                    margin-bottom: 2%;
+                }
                 span{
                     background: url('../img/home/_sprite.png') no-repeat;
                     background-position: 0 0;

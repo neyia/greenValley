@@ -1643,7 +1643,7 @@ li {
 }
 @media only screen and (max-width: 770px) {
   .promo-slider .promo-slider__wrapper {
-    top: 365px;
+    top: 340px;
   }
 }
 .promo-slider .promo-slider__wrapper .promo-slider__pagination li {
@@ -1775,6 +1775,11 @@ li {
   position: relative;
   padding-top: 5.5%;
 }
+@media only screen and (max-width: 770px) {
+  .healthy-rest .healthy-rest__inner .healthy-rest__slide-item {
+    padding-top: 3%;
+  }
+}
 .healthy-rest .healthy-rest__inner .healthy-rest__slide-item-active {
   display: block;
 }
@@ -1786,6 +1791,11 @@ li {
   font-size: 30px;
   line-height: 32px;
   font-weight: 400;
+}
+@media only screen and (max-width: 354px) {
+  .healthy-rest .healthy-rest__inner .healthy-rest__title {
+    margin-bottom: 20px;
+  }
 }
 .healthy-rest .healthy-rest__inner .healthy-rest__text {
   text-align: center;
@@ -1814,6 +1824,12 @@ li {
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
+}
+@media only screen and (max-width: 770px) {
+  .healthy-rest .healthy-rest__inner .healthy-rest__list .healthy-rest__item {
+    margin-left: 9%;
+    margin-bottom: 2%;
+  }
 }
 .healthy-rest .healthy-rest__inner .healthy-rest__list .healthy-rest__item span {
   background: url('../img/home/_sprite.png') no-repeat;
