@@ -1638,8 +1638,13 @@ li {
   margin: 0 auto;
   list-style: none;
   text-align: center;
-  top: 441px;
+  top: 465px;
   position: relative;
+}
+@media only screen and (max-width: 770px) {
+  .promo-slider .promo-slider__wrapper {
+    top: 365px;
+  }
 }
 .promo-slider .promo-slider__wrapper .promo-slider__pagination li {
   margin-right: 10px;
@@ -1670,6 +1675,11 @@ li {
     margin-top: -72px;
   }
 }
+@media only screen and (max-width: 770px) {
+  .promo-slider .promo-slider__list {
+    margin-top: -22px;
+  }
+}
 @media only screen and (max-width: 350px) {
   .promo-slider .promo-slider__list {
     margin-top: -22px;
@@ -1687,12 +1697,22 @@ li {
   background: url('../img/home/slider.jpg') no-repeat;
   background-size: cover;
 }
+@media only screen and (max-width: 770px) {
+  .promo-slider .promo-slider__list .promo-slider__item {
+    height: 325px;
+  }
+}
 .promo-slider .promo-slider__list .promo-slider__item .promo-slider__item-text {
   color: #1c1c1c;
   padding: 90px 15px 0 15px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+}
+@media only screen and (max-width: 770px) {
+  .promo-slider .promo-slider__list .promo-slider__item .promo-slider__item-text {
+    padding: 25px 15px 0 15px;
+  }
 }
 @media only screen and (max-width: 354px) {
   .promo-slider .promo-slider__list .promo-slider__item .promo-slider__item-text {
@@ -1704,7 +1724,7 @@ li {
 }
 .promo-slider .promo-slider__list .promo-slider__item .promo-slider__item-text .promo-slider__item-title {
   color: #1c1c1c;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   font-family: "PT Serif Caption", serif;
   font-size: 36px;
   line-height: 42px;
@@ -1722,8 +1742,8 @@ li {
 }
 .promo-slider .promo-slider__list .promo-slider__item .promo-slider__item-text .promo-slider__item-title span {
   background-color: #ffffff;
-  padding: 10px;
-  line-height: 57px;
+  line-height: 45px;
+  padding: 0px 11px 0px 7px;
 }
 @media only screen and (max-width: 354px) {
   .promo-slider .promo-slider__list .promo-slider__item .promo-slider__item-text .promo-slider__item-title span {

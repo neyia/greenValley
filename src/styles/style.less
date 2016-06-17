@@ -170,9 +170,11 @@ li {
         margin: 0 auto;
         list-style: none;
         text-align: center;
-        top: 441px;
+        top: 465px;
         position: relative;
-
+        @media only screen and (max-width: 770px){
+            top: 365px;
+        }
         .promo-slider__pagination li{
             margin-right: 10px;
         }
@@ -199,6 +201,9 @@ li {
         @media only screen and (max-width: 980px){
             margin-top: -72px;
         }
+        @media only screen and (max-width: 770px){
+            margin-top: -22px;
+        }
         @media only screen and (max-width: 350px){
             margin-top: -22px;
         }
@@ -212,19 +217,23 @@ li {
             display: none;
             background: url('../img/home/slider.jpg') no-repeat;
             background-size: cover;
-
+            @media only screen and (max-width: 770px){
+                height: 325px;
+            }
             .promo-slider__item-text{
                 color: #1c1c1c;
                 padding: 90px 15px 0 15px;
                 .font-styles(18px,24px,400);
-
+                @media only screen and (max-width: 770px){
+                    padding: 25px 15px 0 15px;
+                }
                 @media only screen and (max-width: 354px){
                       padding: 10px 15px 0 15px;
                       .font-styles(14px,20px,400);
                 }
                 .promo-slider__item-title{
                     color: #1c1c1c;
-                    margin-bottom: 40px;
+                    margin-bottom: 25px;
                     font-family: @font-family-pt-serif-caption;
                     .font-styles(36px,42px,400);
 
@@ -236,8 +245,8 @@ li {
                     }
                     span{
                         background-color: #ffffff;
-                        padding: 10px;
-                        line-height: 57px;
+                        line-height: 45px;
+                        padding: 0px 11px 0px 7px;
                         @media only screen and (max-width: 354px){
                             background-color: transparent;
                             line-height: 27px;
