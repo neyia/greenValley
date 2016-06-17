@@ -441,7 +441,9 @@ li {
               margin-right: 10px;
               margin-bottom: 20px;
               margin-top: 20px;
-
+              @media only screen and (max-width: 770px){
+                  width: 500px;
+              }
               @media only screen and (max-width: 354px){
                   margin-right: 0;
               }
@@ -465,6 +467,9 @@ li {
                   height: 160px;
                   @media only screen and (max-width: 980px){
                       height: 210px;
+                  }
+                  @media only screen and (max-width: 770px){
+                      height: 150px;
                   }
                   @media only screen and (max-width: 354px){
                       height: 240px;
@@ -596,6 +601,9 @@ li {
         }
         .transport__routes-list{
             text-align: left;
+            @media only screen and (max-width: 770px){
+                text-align: center;
+            }
         }
     }
 }
@@ -731,6 +739,9 @@ li {
 
     .page-footer__inner {
         padding: 25px 0;
+        @media only screen and (max-width: 770px){
+            padding: 25px;
+        }
     }
 
     .page-footer__address {
