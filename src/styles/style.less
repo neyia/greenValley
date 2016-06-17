@@ -136,7 +136,7 @@ li {
     position: absolute;
     right: 33px;
     top: 22px;
-    @media only screen and (max-width: 770px){
+    @media only screen and (max-width: 350px){
         right: 10px;
         top: 15px;
     }
@@ -232,8 +232,9 @@ li {
                     padding: 25px 15px 0 15px;
                 }
                 @media only screen and (max-width: 354px){
-                      padding: 10px 15px 0 15px;
+                        padding: 10px 0 0 0;
                       .font-styles(14px,20px,400);
+
                 }
                 .promo-slider__item-title{
                     color: #1c1c1c;
@@ -312,6 +313,9 @@ li {
             margin-bottom: 35px;
             color: @color-base;
             .font-styles(16px,22px,400);
+            @media only screen and (max-width: 350px){
+                margin-bottom: 65px;
+            }
         }
 
         .healthy-rest__list{
@@ -355,9 +359,13 @@ li {
 .gallery{
     padding: 60px 0 40px 0;
     @media only screen and (max-width: 354px){
-        display: none;
+        margin-bottom: 50px;
+        width: 321px;
+        height: 260px;
     }
-
+    @media only screen and (max-width: 354px){
+        height: inherit;
+    }
     .gallery__shown-img-item{
         width: 100%;
         color: #ffffff;
@@ -370,6 +378,10 @@ li {
             min-height: 500px;
             @media only screen and (max-width: 770px){
                 min-height: 330px;
+            }
+            @media only screen and (max-width: 354px){
+                min-height: 150px;
+                height: 150px;
             }
         }
     }
@@ -412,12 +424,6 @@ li {
 
     &+.ex-gallery{
         display: none;
-        @media only screen and (max-width: 354px){
-            display: block;
-            margin-bottom: 50px;
-            width: 321px;
-            height: 260px;
-        }
     }
 }
 
@@ -450,6 +456,7 @@ li {
               }
               @media only screen and (max-width: 354px){
                   margin-right: 0;
+                  width: 300px;
               }
 
               .reviews__item-header{
@@ -635,7 +642,9 @@ li {
             background: transparent;
             margin-right: 0;
         }
-
+        @media only screen and (max-width: 354px){
+            margin-bottom: 20px;
+        }
         .recommendations__item-content{
             display: block;
             @media only screen and (max-width: 980px){
@@ -650,6 +659,7 @@ li {
                     min-width: 390px;
                     @media only screen and (max-width: 354px){
                         min-width: 280px;
+                        margin-left: 0;
                     }
                 }
             }
