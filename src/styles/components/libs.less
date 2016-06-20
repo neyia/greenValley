@@ -69,6 +69,7 @@
   height: 500px;
     @media only screen and (max-width: 770px){
         min-height: 330px;
+        height: 330px;
     }
     @media only screen and (max-width: 354px){
         height: 150px;
@@ -80,6 +81,7 @@
   height: 115px;
     @media only screen and (max-width: 770px){
         height: 60px;
+        min-height: 60px;
     }
     @media only screen and (max-width: 354px){
         min-height: 60px;
@@ -97,7 +99,11 @@
     }
   }
 }
-
+.owl-controls,#single_image span img,.fancybox-close{
+    @media only screen and (max-width: 340px){
+        display: none !important;
+    }
+}
 .shares .owl-pagination{
     display: block;
     text-align: center;

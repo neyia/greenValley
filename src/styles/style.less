@@ -44,22 +44,35 @@ li {
 
 .brief-info{
     padding: 41px 0;
+    @media only screen and (max-width: 340px){
+        margin: 0;
+        width: 100%;
+    }
     .brief-info__title{
         color: @color-base;
         font-family: @font-family-pt-serif-caption;
-        padding-bottom: 13px;
+        padding-bottom: 18px;
+        @media only screen and (max-width: 780px){
+            padding-bottom: 25px;
+        }
         .font-styles(26px,19px,400);
     }
     .brief-info__sum{
         color: @color-base;
         font-family: @font-family-fira-sans;
         text-transform: uppercase;
+        padding-bottom: 10px;
+        @media only screen and (max-width: 780px){
+            padding-bottom: 20px;
+        }
         .font-styles(14px,24px,500);
         b{
             color: @color-warning;
             font-size: 18px;
         }
-
+    }
+    .about-room__price.brief-info__sum{
+        margin-top: 15px;
     }
 }
 /*Home via avocode*/
@@ -378,6 +391,7 @@ li {
             min-height: 500px;
             @media only screen and (max-width: 770px){
                 min-height: 330px;
+                height: 330px;
             }
             @media only screen and (max-width: 354px){
                 min-height: 150px;
@@ -674,6 +688,9 @@ li {
 /* Single room via avocode*/
 /* Style for "About room" */
 .about-room{
+    .about-room__slider{
+        margin-bottom: 20px;
+    }
     .about-room__slider .owl-item li img,
     .about-room__slider .owl-item li{
         @media only screen and (max-width: 980px){
@@ -773,6 +790,11 @@ li {
             color: @color-warning;
         }
     }
+    .page-footer__social{
+        @media only screen and (max-width: 770px){
+            margin-left: 12%;
+        }
+    }
 
     .social-links li a i{
         height: 20px;
@@ -815,6 +837,9 @@ li {
 
         .room-categories__img img{
             width: 100%;
+            @media only screen and (max-width: 780px){
+                margin-bottom: 30px;
+            }
         }
         .room-categories__buttons{
             margin-top: 20px;
@@ -857,11 +882,13 @@ li {
           font-family: @font-family-pt-serif-caption;
           font-size: 30px;
           margin-bottom: 26px;
+          font-weight: normal;
         }
 
         .booking__information{
             font-family: @font-family-fira-sans;
             color: #000000;
+            text-align: center;
             .font-styles(16px,20px,400);
             @media only screen and (max-width: 400px){
               margin: 0 20px;
@@ -869,6 +896,7 @@ li {
             .booking__phone-number{
               color: @color-warning;
               font-weight: 500;
+              font-weight: normal;
             }
 
         }
@@ -951,10 +979,13 @@ li {
                   .font-styles(14px,18px,400);
                   padding-bottom: 14px;
                   text-transform: uppercase;
+                    &+img{
+                        opacity: 0.5;
+                    }
                 }
 
-                input[type="radio"]:checked + .place-for-living__item--text{
-                  color: @color-warning;
+                input[type="radio"]:checked + .place-for-living__item--text + img{
+                  opacity: 1;
                 }
 
                 &:first-child{
@@ -1030,20 +1061,69 @@ li {
                         text-transform: uppercase;
                       }
 
-                      input[type="radio"]:checked + .type-of-cottage__item-text{
-                        color: @color-warning;
-                      }
-
 
                       &:first-child{
                         border-left: none;
                       }
                         .type-of-cottage__item-text.choice-block__item-text{}
-                        .type-of-cottage__item-features-wrapper{
-                            .type-of-cottage__item-features{
-                                .type-of-cottage__item-feature{}
+                        .type-of-cottage__item-flagmans-wrapper{
+                          display: none;
+                          position: absolute;
+                          bottom: -205px;
+                          left: 0;
+                          border: 1px solid #ebebeb;
+                          background-color: #fff;
+                          padding: 23px 0 13px 0;
+                          @media only screen and (max-width: 800px){
+                            display: none;
+                          }
+                          &:before {
+                            content: '';
+                            width: 19px;
+                            height: 17px;
+                            display: inline-block;
+                            background-image: url(../img/type-of-cottage__triangle.png);
+                            position: absolute;
+                            left: 85px;
+                            top: -17px;
+                            z-index: 1;
+                          }
+                            .type-of-cottage__item-flagmans{
+                              position: relative;
+                                .type-of-cottage__item-flagman{
+                                  color: @color-base;
+                                  font-family: @font-family-pt-serif-caption;
+                                  .font-styles(14px,18px,300);
+                                  text-transform: uppercase;
+                                  position: relative;
+                                  padding-top: 55px;
+                                  width: 150px;
+                                  vertical-align: top;
+                                  &:before {
+                                    content: '';
+                                    display: inline-block;
+                                    width: 45px;
+                                    height: 45px;
+                                    background-image: url(../img/form/cottage.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: bottom;
+                                    background-size: contain;
+                                    position: absolute;
+                                    left: 50%;
+                                    top: 0;
+                                    transform: translate(-50%, 0);
+                                  }
+                                }
                             }
                         }
+                      input[type="radio"]:checked + .type-of-cottage__item-text{
+                        color: @color-warning;
+                        & + img + .type-of-cottage__item-flagmans-wrapper{
+                          display: block;
+                          width: 780px;
+
+                        }
+                      }
                     }
                 }
             }
@@ -1099,7 +1179,7 @@ li {
     }
     
     .payment{
-      background-color: @bg-section-form;
+      background-color: #fafafa;
         .payment__inner{
           padding: 50px 0;
             .payment__step{
@@ -1113,37 +1193,255 @@ li {
               text-align: center;
               color: @color-base;
               font-family: @font-family-pt-serif-caption;
-              .font-styles(26px,30px,400);
-              margin-bottom: 20px;
+              .font-styles(30px,39px,400);
+              margin-bottom: 30px;
             }
-            .payment__form-wrapper{
+            .payment__form-inner{
+
+              display: inline-block;
                 .payment__form{
-                    .type-of-payment{
-                        .payment-on-place{
-                            .payment-on-place__explanation{
-                                .payment-on-place__choose{}
-                                .payment-on-place__hint{}
+                  margin-bottom: 50px;
+                    @media only screen and (max-width: 800px){
+                        margin-bottom: 70px;
+                    }
+                    .payment__form-type{
+                      width: 66%;
+                      padding-left: 16px;
+                      display: inline-block;
+                      vertical-align: top;
+                      @media only screen and (max-width: 800px){
+                        width: 100%;
+                      }
+                      .payment-place{
+                          background-color: #fff;
+                          border: 1px solid #ebebeb;
+                          margin-bottom: 25px;
+                          padding: 20px;
+                          text-align: left;
+                          cursor: pointer;
+                            .payment-place__description{
+                              label{
+                                color: #191919;
+                                text-transform: uppercase;
+                                .font-styles(14px,18px,300);
+                                font-family: @font-family-fira-sans;
+                                  margin-top: 3px;
+                                  vertical-align: top;
+                                  display: inline-block;
+                                  width: 31%;
+                                  @media only screen and (max-width: 800px){
+                                      width: 100%;
+                                  }
+                              }
+                            .payment-place__help{
+                                font-size: 14px;
+                                line-height: 18px;
+                                font-family: 'Fira Sans';
+                                font-weight: 300;
+                                color: #191919;
+                                display: inline-block;
+                                width: 55%;
+                                @media only screen and (max-width: 800px){
+                                    display: none;
+                                }
+                            }
+                              input{
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                appearance: none;
+                              }
+                              .payment-place__choose{
+                                  .font-styles(14px,18px,500);
+                                  font-family: @font-family-fira-sans;
+                                  color: @color-base;
+                                  text-transform: uppercase;
+                                  margin-left: 8.29%;
+                                  position: relative;
+                                  cursor: pointer;
+                                  padding-left: 30px;
+                                  margin-right: 0px;
+                                  &:before {
+                                    content: '';
+                                    position: absolute;
+                                    display: inline-block;
+                                    left: 3px;
+                                    top: 0;
+                                    width: 16px;
+                                    height: 10px;
+                                    border-left: 4px solid #ebebeb;
+                                    border-bottom: 4px solid #ebebeb;
+                                    transform: rotate(-45deg);
+                                  }
+                              }
+                              input:checked + .payment-place__choose:before {
+                                border-color: @color-success;
+                              }
                             }
                         }
-                        .payment-now{
-                            .payment-now__explanation{}
-                        }
-                        .payment-now__form{
-                            .payment-now__col1{
-                                .personal-data__success{}
-                                .personal-data__error{}
+                      .payment-in-time{
+                          background-color: #fff;
+                          margin-bottom: 25px;
+                          padding: 20px;
+                          text-align: left;
+                          border: 1px solid #ebebeb;
+                          cursor: pointer;
+                          .payment-in-time__description{
+                            margin-bottom: 20px;
+                                label{
+
+                                    margin-top: 3px;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 31%;
+                                    @media only screen and (max-width: 800px){
+                                        width: 100%;
+                                    }
+                                }
+                              .payment-place__help{
+                                  font-size: 14px;
+                                  line-height: 18px;
+                                  font-family: 'Fira Sans';
+                                  font-weight: 300;
+                                  color: #191919;
+                                  display: inline-block;
+                                  width: 55%;
+                                  @media only screen and (max-width: 800px){
+                                      display: none;
+                                  }
+                              }
+                          }
+                          input{
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                          }
+                          .payment-in-time__choose{
+                            .font-styles(14px,18px,500);
+                            font-family: @font-family-fira-sans;
+                            color: @color-base;
+                            text-transform: uppercase;
+                            margin-left: 8.29%;
+                            position: relative;
+                            cursor: pointer;
+                            padding-left: 40px;
+                            margin-right: 20px;
+                            &:before {
+                              content: '';
+                              position: absolute;
+                              display: inline-block;
+                              left: 3px;
+                              top: 0;
+                              width: 16px;
+                              height: 10px;
+                              border-bottom: 4px solid #ebebeb;
+                              border-left: 4px solid #ebebeb;
+                              transform: rotate(-45deg);
                             }
+                          }
+                          input:checked + .payment-in-time__choose:before {
+                            border-color: #0ab89d;
+                          }
                         }
+                      .payment-in-time__form .payment-in-time__b{
+                            width: 260px;
+                            display: inline-block;
+                            margin-right: 20px;
+                          @media only screen and (max-width: 800px){
+                              width: 100%;
+                          }
+                        }
+                      .payment-in-time__form .payment-in-time__b2{
+                          width: 135px;
+                          display: inline-block;
+                          @media only screen and (max-width: 800px){
+                           width: 100%;
+                          }
+                        }
+                        .payment-in-time__form label {
+                        .font-styles(14px,18px,300);
+                        font-family: @font-family-fira-sans;
+                        color: @color-base;
+                        text-transform: uppercase;
+                        display: inline-block;
+                        width: 83%;
+                        margin-left: 8.29%;
+                        padding: 0;
+                        text-align: left;
+                        margin-bottom: 10px;
+                      }
+                      .payment-in-time__form input {
+                        background: none;
+                        border: 1px solid #ebebeb;
+                        .font-styles(14px,18px,300);
+                        font-family: @font-family-fira-sans;
+                        color: @color-base;
+                        text-transform: uppercase;
+                        display: inline-block;
+                        width: 83%;
+                        margin-left: 8.3%;
+                        padding: 12px 9px;
+                        text-align: center;
+                          margin-bottom: 16px;
+                      }
                     }
                 }
             }
-            .sum-for-payment{
-                .sum-for-payment__title{}
-                .sum-for-payment__sum{}
-                .sum-for-payment__warning{}
+            .itogo{
+              width: 33%;
+              display: inline-block;
+              vertical-align: top;
+              background-color: #fff;
+              border: 1px solid #ebebeb;
+              padding: 20px;
+              height: 385px;
+              @media only screen and (max-width: 800px){
+                position: absolute;
+                bottom: 10px;
+                width: 348px;
+                height: auto;
+                margin: 0 3.5%;
+              }
+                .itogo__title{
+                  .font-styles(14px,18px,300);
+                  font-family: @font-family-fira-sans;
+                  color: @color-base;
+                  text-transform: uppercase;
+                  margin-bottom: 10px;
+                }
+                .itogo__sum{
+                  .font-styles(24px,18px,500);
+                  text-transform: uppercase;
+                  margin-bottom: 8px;
+                }
+              .itogo__date {
+                text-decoration: none;
+                display: inline-block;
+                cursor: pointer;
+                color: @color-base;
+                border-bottom: 1px dashed @color-base;
+              }
+                .sum-for-payment__warning{
+                  display: inline-block;
+                  width: 83%;
+                  margin-left: 8.29%;
+                  .font-styles(14px,18px,300);
+                  font-family: @font-family-fira-sans;
+                  color: @color-base;
+                  text-align: left;
+                  i{
+                    font-size: 14px;
+                    color: #e71818;
+                    margin-right: 5px;
+                  }
+                }
             }
+
             .payment__btn{
-                .btn.btn--blue{}
+                .btn.btn--blue{
+                    width: 65%;
+                    padding: 15px 0;
+                    border-radius: 0;
+                }
             }
         }
     }

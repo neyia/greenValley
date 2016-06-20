@@ -1257,6 +1257,16 @@ input:focus:-ms-input-placeholder {
   background: transparent;
   color: #ffffff;
 }
+.btn--underline {
+  width: auto;
+  border-radius: 0;
+  border: none;
+}
+.btn--underline:hover {
+  border-bottom: 1px dashed #191919;
+  background: none;
+  color: #191919;
+}
 .fancybox-close {
   top: 21px;
   right: 21px;
@@ -1346,6 +1356,7 @@ input:focus:-ms-input-placeholder {
 @media only screen and (max-width: 770px) {
   .gallery .owl-carousel {
     min-height: 330px;
+    height: 330px;
   }
 }
 @media only screen and (max-width: 354px) {
@@ -1360,6 +1371,7 @@ input:focus:-ms-input-placeholder {
 @media only screen and (max-width: 770px) {
   .gallery #sync2 {
     height: 60px;
+    min-height: 60px;
   }
 }
 @media only screen and (max-width: 354px) {
@@ -1381,6 +1393,13 @@ input:focus:-ms-input-placeholder {
 @media only screen and (max-width: 770px) {
   .gallery #sync2 .owl-wrapper-outer .owl-item {
     height: 60px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .owl-controls,
+  #single_image span img,
+  .fancybox-close {
+    display: none !important;
   }
 }
 .shares .owl-pagination {
@@ -1496,25 +1515,45 @@ li {
 .brief-info {
   padding: 41px 0;
 }
+@media only screen and (max-width: 340px) {
+  .brief-info {
+    margin: 0;
+    width: 100%;
+  }
+}
 .brief-info .brief-info__title {
   color: #191919;
   font-family: "PT Serif Caption", serif;
-  padding-bottom: 13px;
+  padding-bottom: 18px;
   font-size: 26px;
   line-height: 19px;
   font-weight: 400;
+}
+@media only screen and (max-width: 780px) {
+  .brief-info .brief-info__title {
+    padding-bottom: 25px;
+  }
 }
 .brief-info .brief-info__sum {
   color: #191919;
   font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
 }
+@media only screen and (max-width: 780px) {
+  .brief-info .brief-info__sum {
+    padding-bottom: 20px;
+  }
+}
 .brief-info .brief-info__sum b {
   color: #ff7435;
   font-size: 18px;
+}
+.brief-info .about-room__price.brief-info__sum {
+  margin-top: 15px;
 }
 /*Home via avocode*/
 /* Style for "Header" */
@@ -1882,6 +1921,7 @@ li {
 @media only screen and (max-width: 770px) {
   .gallery .gallery__shown-img-item img {
     min-height: 330px;
+    height: 330px;
   }
 }
 @media only screen and (max-width: 354px) {
@@ -2197,6 +2237,9 @@ li {
 }
 /* Single room via avocode*/
 /* Style for "About room" */
+.about-room .about-room__slider {
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 980px) {
   .about-room .about-room__slider .owl-item li img,
   .about-room .about-room__slider .owl-item li {
@@ -2289,6 +2332,11 @@ li {
 .page-footer .page-footer__fast-contacts a:hover {
   color: #ff7435;
 }
+@media only screen and (max-width: 770px) {
+  .page-footer .page-footer__social {
+    margin-left: 12%;
+  }
+}
 .page-footer .social-links li a i {
   height: 20px;
   color: #0ab89d;
@@ -2331,6 +2379,11 @@ li {
 .rooms .room-categories__item .room-categories__img img {
   width: 100%;
 }
+@media only screen and (max-width: 780px) {
+  .rooms .room-categories__item .room-categories__img img {
+    margin-bottom: 30px;
+  }
+}
 .rooms .room-categories__item .room-categories__buttons {
   margin-top: 20px;
 }
@@ -2369,10 +2422,12 @@ li {
   font-family: "PT Serif Caption", serif;
   font-size: 30px;
   margin-bottom: 26px;
+  font-weight: normal;
 }
 .main-form .booking .booking__inner .booking__information {
   font-family: "Fira Sans", sans-serif;
   color: #000000;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -2385,6 +2440,7 @@ li {
 .main-form .booking .booking__inner .booking__information .booking__phone-number {
   color: #ff7435;
   font-weight: 500;
+  font-weight: normal;
 }
 .main-form .date-of-rest {
   background-color: #f1f1f1;
@@ -2468,8 +2524,11 @@ li {
   padding-bottom: 14px;
   text-transform: uppercase;
 }
-.main-form .place-for-living .place-for-living__inner .place-for-living__list li input[type="radio"]:checked + .place-for-living__item--text {
-  color: #ff7435;
+.main-form .place-for-living .place-for-living__inner .place-for-living__list li .place-for-living__item--text + img {
+  opacity: 0.5;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__list li input[type="radio"]:checked + .place-for-living__item--text + img {
+  opacity: 1;
 }
 .main-form .place-for-living .place-for-living__inner .place-for-living__list li:first-child {
   border-right: 1px solid #ebebeb;
@@ -2548,11 +2607,69 @@ li {
   padding-bottom: 14px;
   text-transform: uppercase;
 }
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item:first-child {
+  border-left: none;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper {
+  display: none;
+  position: absolute;
+  bottom: -205px;
+  left: 0;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  padding: 23px 0 13px 0;
+}
+@media only screen and (max-width: 800px) {
+  .main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper {
+    display: none;
+  }
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper:before {
+  content: '';
+  width: 19px;
+  height: 17px;
+  display: inline-block;
+  background-image: url(../img/type-of-cottage__triangle.png);
+  position: absolute;
+  left: 85px;
+  top: -17px;
+  z-index: 1;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper .type-of-cottage__item-flagmans {
+  position: relative;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper .type-of-cottage__item-flagmans .type-of-cottage__item-flagman {
+  color: #191919;
+  font-family: "PT Serif Caption", serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 55px;
+  width: 150px;
+  vertical-align: top;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper .type-of-cottage__item-flagmans .type-of-cottage__item-flagman:before {
+  content: '';
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/form/cottage.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
 .main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item input[type="radio"]:checked + .type-of-cottage__item-text {
   color: #ff7435;
 }
-.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item:first-child {
-  border-left: none;
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item input[type="radio"]:checked + .type-of-cottage__item-text + img + .type-of-cottage__item-flagmans-wrapper {
+  display: block;
+  width: 780px;
 }
 .main-form .personal-data .personal-data__inner {
   padding: 50px 0;
@@ -2599,7 +2716,7 @@ li {
   border: 1px solid #fa3d14;
 }
 .main-form .payment {
-  background-color: #f1f1f1;
+  background-color: #fafafa;
 }
 .main-form .payment .payment__inner {
   padding: 50px 0;
@@ -2617,8 +2734,282 @@ li {
   text-align: center;
   color: #191919;
   font-family: "PT Serif Caption", serif;
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 30px;
+  line-height: 39px;
   font-weight: 400;
+  margin-bottom: 30px;
+}
+.main-form .payment .payment__inner .payment__form-inner {
+  display: inline-block;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 800px) {
+  .main-form .payment .payment__inner .payment__form-inner .payment__form {
+    margin-bottom: 70px;
+  }
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type {
+  width: 66%;
+  padding-left: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+@media only screen and (max-width: 800px) {
+  .main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type {
+    width: 100%;
+  }
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-place {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  margin-bottom: 25px;
+  padding: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-place .payment-place__description label {
+  color: #191919;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 3px;
+  vertical-align: top;
+  display: inline-block;
+  width: 31%;
+}
+@media only screen and (max-width: 800px) {
+  .main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-place .payment-place__description label {
+    width: 100%;
+  }
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-place .payment-place__description .payment-place__help {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Fira Sans';
+  font-weight: 300;
+  color: #191919;
+  display: inline-block;
+  width: 55%;
+}
+@media only screen and (max-width: 800px) {
+  .main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-place .payment-place__description .payment-place__help {
+    display: none;
+  }
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-place .payment-place__description input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-place .payment-place__description .payment-place__choose {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  color: #191919;
+  text-transform: uppercase;
+  margin-left: 8.29%;
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+  margin-right: 0px;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-place .payment-place__description .payment-place__choose:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 3px;
+  top: 0;
+  width: 16px;
+  height: 10px;
+  border-left: 4px solid #ebebeb;
+  border-bottom: 4px solid #ebebeb;
+  transform: rotate(-45deg);
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-place .payment-place__description input:checked + .payment-place__choose:before {
+  border-color: #0ab89d;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time {
+  background-color: #fff;
+  margin-bottom: 25px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #ebebeb;
+  cursor: pointer;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time .payment-in-time__description {
   margin-bottom: 20px;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time .payment-in-time__description label {
+  margin-top: 3px;
+  vertical-align: top;
+  display: inline-block;
+  width: 31%;
+}
+@media only screen and (max-width: 800px) {
+  .main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time .payment-in-time__description label {
+    width: 100%;
+  }
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time .payment-in-time__description .payment-place__help {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Fira Sans';
+  font-weight: 300;
+  color: #191919;
+  display: inline-block;
+  width: 55%;
+}
+@media only screen and (max-width: 800px) {
+  .main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time .payment-in-time__description .payment-place__help {
+    display: none;
+  }
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time .payment-in-time__choose {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  color: #191919;
+  text-transform: uppercase;
+  margin-left: 8.29%;
+  position: relative;
+  cursor: pointer;
+  padding-left: 40px;
+  margin-right: 20px;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time .payment-in-time__choose:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 3px;
+  top: 0;
+  width: 16px;
+  height: 10px;
+  border-bottom: 4px solid #ebebeb;
+  border-left: 4px solid #ebebeb;
+  transform: rotate(-45deg);
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time input:checked + .payment-in-time__choose:before {
+  border-color: #0ab89d;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time__form .payment-in-time__b {
+  width: 260px;
+  display: inline-block;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time__form .payment-in-time__b {
+    width: 100%;
+  }
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time__form .payment-in-time__b2 {
+  width: 135px;
+  display: inline-block;
+}
+@media only screen and (max-width: 800px) {
+  .main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time__form .payment-in-time__b2 {
+    width: 100%;
+  }
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time__form label {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  font-family: "Fira Sans", sans-serif;
+  color: #191919;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 83%;
+  margin-left: 8.29%;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.main-form .payment .payment__inner .payment__form-inner .payment__form .payment__form-type .payment-in-time__form input {
+  background: none;
+  border: 1px solid #ebebeb;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  font-family: "Fira Sans", sans-serif;
+  color: #191919;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 83%;
+  margin-left: 8.3%;
+  padding: 12px 9px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.main-form .payment .payment__inner .itogo {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  padding: 20px;
+  height: 385px;
+}
+@media only screen and (max-width: 800px) {
+  .main-form .payment .payment__inner .itogo {
+    position: absolute;
+    bottom: 10px;
+    width: 348px;
+    height: auto;
+    margin: 0 3.5%;
+  }
+}
+.main-form .payment .payment__inner .itogo .itogo__title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  font-family: "Fira Sans", sans-serif;
+  color: #191919;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.main-form .payment .payment__inner .itogo .itogo__sum {
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.main-form .payment .payment__inner .itogo .itogo__date {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #191919;
+  border-bottom: 1px dashed #191919;
+}
+.main-form .payment .payment__inner .itogo .sum-for-payment__warning {
+  display: inline-block;
+  width: 83%;
+  margin-left: 8.29%;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  font-family: "Fira Sans", sans-serif;
+  color: #191919;
+  text-align: left;
+}
+.main-form .payment .payment__inner .itogo .sum-for-payment__warning i {
+  font-size: 14px;
+  color: #e71818;
+  margin-right: 5px;
+}
+.main-form .payment .payment__inner .payment__btn .btn.btn--blue {
+  width: 65%;
+  padding: 15px 0;
+  border-radius: 0;
 }
