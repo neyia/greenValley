@@ -146,17 +146,17 @@
                 <ul class="type-of-cottage__list choice-block col-md-12 clearfix">
                     <li class="type-of-cottage__item choice-block__item col-xs-12 col-md-2">
                         <label for="cottage1">
-                            <input type="radio" id="cottage1" name="typeOfCottage">
+                            <input type="radio" id="cottage1" name="typeOfCottage" checked />
                             <span class="type-of-cottage__item-text choice-block__item-text">флагман</span>
                             <img src="img/form/hotel_bathtub.svg" alt="c"/>
 
                             <span class="type-of-cottage__item-flagmans-wrapper col-md-6">
                                 <ul class="type-of-cottage__item-flagmans">
-                                    <li class="type-of-cottage__item-flagman">площадь 100м<sup>2</sup></li>
-                                    <li class="type-of-cottage__item-flagman">3 комнаты</li>
-                                    <li class="type-of-cottage__item-flagman">5 спальных мест</li>
-                                    <li class="type-of-cottage__item-flagman">раздельный санузел</li>
-                                    <li class="type-of-cottage__item-flagman">wi-fi</li>
+                                    <li class="type-of-cottage__item-flagman f1">площадь 100м<sup>2</sup></li>
+                                    <li class="type-of-cottage__item-flagman f2">3 комнаты</li>
+                                    <li class="type-of-cottage__item-flagman f3">5 спальных мест</li>
+                                    <li class="type-of-cottage__item-flagman f4">раздельный санузел</li>
+                                    <li class="type-of-cottage__item-flagman f5">wi-fi</li>
                                 </ul>
                             </span>
                         </label>
@@ -164,23 +164,25 @@
                     </li>
                     <li class="type-of-cottage__item choice-block__item col-xs-12 col-md-2">
                         <label for="cottage2">
-                            <input type="radio" id="cottage2" name="typeOfCottage">
-                            <span class="type-of-cottage__item-text choice-block__item-text">флагман</span>
-                            <img src="img/form/hotel_bathtub.svg" alt="c"/>
+                            <input type="radio" id="cottage2" name="typeOfCottage1">
+                            <span class="type-of-cottage__item-text choice-block__item-text">ОЗЕРНЫЙ</span>
+                            <img src="img/form/elevator_door.svg" alt="c"/>
                         </label>
                     </li>
                     <li class="type-of-cottage__item choice-block__item col-xs-12 col-md-2">
                         <label for="cottage3">
-                            <input type="radio" id="cottage3" name="typeOfCottage">
-                            <span class="type-of-cottage__item-text choice-block__item-text">флагман</span>
-                            <img src="img/form/hotel_bathtub.svg" alt="c"/>
+                            <input type="radio" id="cottage3" name="typeOfCottage1">
+                            <span class="type-of-cottage__item-text choice-block__item-text">ПОРТОВЫЙ</span>
+                            <img src="img/form/king_size_bed.svg" alt="c"/>
+
                         </label>
                     </li>
                     <li class="type-of-cottage__item choice-block__item col-xs-12 col-md-2">
                         <label for="cottage4">
-                            <input type="radio" id="cottage4" name="typeOfCottage">
-                            <span class="type-of-cottage__item-text choice-block__item-text">флагман</span>
-                            <img src="img/form/hotel_bathtub.svg" alt="c"/>
+                            <input type="radio" id="cottage4" name="typeOfCottage1">
+                            <span class="type-of-cottage__item-text choice-block__item-text">ОЛЬХОВКА</span>
+                            <img src="img/form/triangle.svg" alt="c"/>
+
                         </label>
                     </li>
                 </ul>
@@ -194,7 +196,7 @@
             <div class="row">
                 <p class="personal-data__step step">шаг 4</p>
                 <h2 class="personal-data__title">Персональная информация</h2>
-                <div class="personal-data__form col-xs-12 col-md-6 col-md-offset-3 clearfix">
+                <div class="personal-data__form col-xs-12 col-md-8 col-md-offset-2 clearfix">
                     <div class="personal-data__input-wrapper col-md-6">
                         <i class="fa fa-check" aria-hidden="true"></i>
                         <input type="text" name="firstName" placeholder="имя" id="firstName"/>
@@ -207,10 +209,12 @@
 
                     <div class="personal-data__input-wrapper col-md-6">
                         <input type="text" name="phoneNumber" id="phoneNumber" placeholder="номер телефона"/>
+                        <label for="phoneNumber">На этот адрес мы вышлем вам подтверждение о забронированном номере.</label>
                      </div>
 
                     <div class="personal-data__input-wrapper col-md-6 err">
                         <input type="email" name="email" id="email" placeholder="e-mail"/>
+                        <label for="email">На этот адрес мы вышлем вам подтверждение о забронированном номере.</label>
                     </div>
                 </div>
             </div>

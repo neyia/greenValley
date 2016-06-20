@@ -2440,7 +2440,6 @@ li {
 .main-form .booking .booking__inner .booking__information .booking__phone-number {
   color: #ff7435;
   font-weight: 500;
-  font-weight: normal;
 }
 .main-form .date-of-rest {
   background-color: #f1f1f1;
@@ -2453,6 +2452,7 @@ li {
   font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -2461,7 +2461,7 @@ li {
   text-align: center;
   color: #191919;
   font-family: "PT Serif Caption", serif;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 26px;
   line-height: 30px;
   font-weight: 400;
@@ -2474,7 +2474,7 @@ li {
 .main-form .date-of-rest .date-of-rest__inner .date-of-rest__choice.choice-block .choice-block__item {
   text-align: center;
   box-sizing: content-box;
-  margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 .main-form .date-of-rest .date-of-rest__inner .date-of-rest__choice.choice-block .choice-block__item:first-child {
   border-right: 1px solid #ebebeb;
@@ -2495,6 +2495,8 @@ li {
   border: 1px solid #ebebeb;
   padding: 0 5px 0;
   margin: 5px 0 0 0;
+  text-transform: uppercase;
+  font-size: 14px;
   color: #0ab89d;
 }
 .main-form .place-for-living .place-for-living__inner {
@@ -2527,6 +2529,22 @@ li {
 .main-form .place-for-living .place-for-living__inner .place-for-living__list li .place-for-living__item--text + img {
   opacity: 0.5;
 }
+.main-form .place-for-living .place-for-living__inner .place-for-living__list li .place-for-living__item--text:after {
+  content: '';
+  position: absolute;
+  display: none;
+  width: 16px;
+  height: 10px;
+  border-bottom: 4px solid #0ab89d;
+  border-left: 4px solid #0ab89d;
+  top: 102px;
+  left: 50%;
+  transform: rotate(-45deg) translate(-50%, 0);
+  transition: ease-in-out all 400ms;
+}
+.main-form .place-for-living .place-for-living__inner .place-for-living__list li input[type="radio"]:checked + .place-for-living__item--text:after {
+  display: block;
+}
 .main-form .place-for-living .place-for-living__inner .place-for-living__list li input[type="radio"]:checked + .place-for-living__item--text + img {
   opacity: 1;
 }
@@ -2538,6 +2556,7 @@ li {
   font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 15px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -2545,7 +2564,7 @@ li {
 .main-form .place-for-living .place-for-living__inner .place-for-living__title {
   text-align: center;
   color: #191919;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-family: "PT Serif Caption", serif;
   font-size: 26px;
   line-height: 19px;
@@ -2561,6 +2580,7 @@ li {
   color: #929292;
   font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
+  padding-bottom: 15px;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
@@ -2573,7 +2593,10 @@ li {
   font-size: 26px;
   line-height: 30px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper {
+  margin-bottom: 12%;
 }
 .main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block {
   border: 1px solid #ebebeb;
@@ -2585,6 +2608,7 @@ li {
   box-sizing: content-box;
   margin-bottom: 10px;
   margin-left: 30px;
+  height: 80px;
   border-left: 1px solid #ebebeb;
 }
 @media only screen and (max-width: 900px) {
@@ -2612,9 +2636,10 @@ li {
 }
 .main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper {
   display: none;
-  position: absolute;
-  bottom: -205px;
-  left: 0;
+  position: relative;
+  bottom: -85px;
+  left: auto;
+  margin-left: -45px;
   border: 1px solid #ebebeb;
   background-color: #fff;
   padding: 23px 0 13px 0;
@@ -2664,12 +2689,45 @@ li {
   top: 0;
   transform: translate(-50%, 0);
 }
-.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item input[type="radio"]:checked + .type-of-cottage__item-text {
-  color: #ff7435;
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper .type-of-cottage__item-flagmans .f1:before {
+  background-image: url(../img/form/cottage.svg);
+  background-repeat: no-repeat;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper .type-of-cottage__item-flagmans .f2:before {
+  background-image: url(../img/form/elevator_door.svg);
+  background-repeat: no-repeat;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper .type-of-cottage__item-flagmans .f3:before {
+  background-image: url(../img/form/hotel.svg);
+  background-repeat: no-repeat;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper .type-of-cottage__item-flagmans .f4:before {
+  background-image: url(../img/form/hotel_bathtub.svg);
+  background-repeat: no-repeat;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-flagmans-wrapper .type-of-cottage__item-flagmans .f5:before {
+  background-image: url(../img/form/wifi_modem.svg);
+  background-repeat: no-repeat;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item .type-of-cottage__item-text:after {
+  content: '';
+  position: absolute;
+  display: none;
+  width: 16px;
+  height: 10px;
+  border-bottom: 4px solid #0ab89d;
+  border-left: 4px solid #0ab89d;
+  top: 80px;
+  left: 50%;
+  transform: rotate(-45deg) translate(-50%, 0);
+  transition: ease-in-out all 400ms;
+}
+.main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item input[type="radio"]:checked + .type-of-cottage__item-text:after {
+  display: block;
 }
 .main-form .type-of-cottage .type-of-cottage__inner .type-of-cottage__list-wrapper .type-of-cottage__list.choice-block .type-of-cottage__item.choice-block__item input[type="radio"]:checked + .type-of-cottage__item-text + img + .type-of-cottage__item-flagmans-wrapper {
   display: block;
-  width: 780px;
+  width: 770px;
 }
 .main-form .personal-data .personal-data__inner {
   padding: 50px 0;
@@ -2679,6 +2737,7 @@ li {
   font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 15px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -2690,7 +2749,7 @@ li {
   font-size: 26px;
   line-height: 30px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .main-form .personal-data .personal-data__inner .personal-data__form .personal-data__input-wrapper {
   position: relative;
@@ -2709,8 +2768,16 @@ li {
   width: 100%;
   padding-left: 37px;
   text-align: center;
+  text-transform: uppercase;
   background-color: white;
   border: 1px solid #ebebeb;
+}
+.main-form .personal-data .personal-data__inner .personal-data__form .personal-data__input-wrapper label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
 }
 .main-form .personal-data .personal-data__inner .personal-data__form .err input {
   border: 1px solid #fa3d14;
