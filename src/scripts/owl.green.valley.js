@@ -81,10 +81,10 @@ $(document).ready(function(){
 
     owl.owlCarousel({
         items : 2,
-        itemsDesktop      : [1199,2],
-        itemsDesktopSmall     : [979,2],
-        itemsTablet       : [768,1],
-        itemsMobile       : [479,1],
+        itemsDesktop      : [1200,2],
+        itemsDesktopSmall     : [980,2],
+        itemsTablet       : [769,1],
+        itemsMobile       : [480,1],
         pagination: false
     });
 
