@@ -3,7 +3,7 @@ var less = require('gulp-less');
 var path = require('path');
 var headerfooter = require('gulp-headerfooter');
 var autoprefixer = require('gulp-autoprefixer');
-
+var concat = require('gulp-concat');
 
 gulp.task('html', function () {
     return gulp.src('./src/*.html').pipe(gulp.dest('./build'));
@@ -41,7 +41,32 @@ gulp.task('less', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
+        .pipe(gulp.dest('./src/styles'));
+});
+
+gulp.task('styles', function() {
+    return gulp.src([
+        './src/styles/libs/font-awesome.css', 
+        './src/styles/libs/jquery.fancybox.css', 
+        './src/styles/libs/owl.carousel.css', 
+        './src/styles/style.css'])
+        .pipe(concat('all.css'))
         .pipe(gulp.dest('./build/styles'));
+});
+
+gulp.task('scripts', function() {
+    return gulp.src([
+        
+        './src/scripts/map.js', 
+        './src/scripts/owl.carousel.js', 
+        './src/scripts/owl.carousel.min.js', 
+        './src/scripts/owl.green.valley.js', 
+        './src/scripts/owl.green.valley.js', 
+        './src/scripts/promo-slider.js',
+            './src/scripts/jquery.fancybox-1.3.4.js',
+            './src/scripts/scripts.js'])
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('./build/scripts'));
 });
 
 gulp.task('watch', function () {
